@@ -31,6 +31,7 @@ pub const ACP_AGENTS: &[(&str, &[&str])] = &[
     ("hermes", &["acp"]),
     ("maki", &["acp"]),
     ("copilot", &["--acp", "--stdio"]),
+    ("agent", &["acp"]),
 ];
 
 /// Agents whose ACP mode takes the backend's model (`cli_model`), and the flag after the ACP

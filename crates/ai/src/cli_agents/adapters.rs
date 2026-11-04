@@ -7,11 +7,13 @@ use super::*;
 
 mod antigravity;
 mod copilot;
+mod cursor_agent;
 mod hermes;
 mod maki;
 mod opencode;
 pub use antigravity::Antigravity;
 pub use copilot::Copilot;
+pub use cursor_agent::CursorAgent;
 pub use hermes::Hermes;
 pub use maki::Maki;
 pub use opencode::OpenCode;
@@ -226,6 +228,7 @@ impl AgentAdapters {
                 Arc::new(Hermes),
                 Arc::new(Maki),
                 Arc::new(Copilot),
+                Arc::new(CursorAgent),
             ],
         }
     }
