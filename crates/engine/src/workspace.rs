@@ -17,7 +17,7 @@
 //! already has their files, they're either the app itself (`app_in_root`: the builder edits them in
 //! place and the folders above sit beside them) or material to start from, with the app in app/.
 
-use crate::inbox::now_ms;
+use crate::inbox::{next_counter, now_ms};
 use crate::project::write_atomic;
 use crate::versioned::{self, upgrade};
 use craft_anything_evidence::{ErrorCode, ToolError};
@@ -1147,7 +1147,7 @@ pub fn pasted_dir() -> PathBuf {
     dirs::cache_dir().or_else(|| dirs::home_dir().map(|h| h.join(".cache"))).unwrap_or_else(std::env::temp_dir).join("Craft Anything").join("pasted")
 }
 
-/// Save a picture pasted from the clipboard (8-bit RGBA, `width`×`height`) as `pasted-<time>.png`
+/// Save a picture pasted from the clipboard (8-bit RGBA, `width`×`height`) as `pasted-<time>-<n>.png`
 /// in `dir`, readable only by this person, where it waits until its message is sent (which
 /// copies it into the project). Pastes from earlier days are cleared out first, except those in
 /// `keep` (still attached to a draft or a message).
@@ -1173,11 +1173,13 @@ pub fn save_pasted_picture(dir: &Path, width: u32, height: u32, rgba: Vec<u8>, k
         let _ = std::fs::set_permissions(dir, std::fs::Permissions::from_mode(0o700));
     }
     forget_old_pastes(dir, keep);
-    // The name is taken with create_new, so two pastes (or two copies of the app) never share one.
+    // The counter makes the name unique within this process, so a paste never reuses a name that
+    // forget_old_pastes just freed in the same millisecond; create_new still guards two app copies.
     let ms = now_ms();
+    let c = next_counter();
     let mut n = 1u32;
     let path = loop {
-        let path = if n == 1 { dir.join(format!("pasted-{ms}.png")) } else { dir.join(format!("pasted-{ms}-{n}.png")) };
+        let path = if n == 1 { dir.join(format!("pasted-{ms}-{c}.png")) } else { dir.join(format!("pasted-{ms}-{c}-{n}.png")) };
         match std::fs::OpenOptions::new().write(true).create_new(true).open(&path) {
             Ok(_) => break path,
             Err(e) if e.kind() == std::io::ErrorKind::AlreadyExists && n < 1000 => n = n.saturating_add(1),
