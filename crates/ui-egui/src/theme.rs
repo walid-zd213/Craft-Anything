@@ -206,6 +206,7 @@ pub static DM_SANS_REGULAR: &[u8] = include_bytes!("../../../assets/fonts/DMSans
 pub static DM_SANS_MEDIUM: &[u8] = include_bytes!("../../../assets/fonts/DMSans-Medium.ttf");
 pub static DM_SANS_BOLD: &[u8] = include_bytes!("../../../assets/fonts/DMSans-Bold.ttf");
 pub static JETBRAINS_MONO: &[u8] = include_bytes!("../../../assets/fonts/JetBrainsMono-Regular.ttf");
+pub static NOTO_SANS_ARABIC: &[u8] = include_bytes!("../../../assets/fonts/NotoSansArabic-Regular.ttf");
 
 /// A font from the optional craft-fonts build input (empty unless built with `CRAFT_FONTS_DIR`).
 pub struct CraftFont {
@@ -229,6 +230,7 @@ pub fn install_fonts(ctx: &egui::Context) {
     add("DMSans-Medium", DM_SANS_MEDIUM);
     add("DMSans-Bold", DM_SANS_BOLD);
     add("JetBrainsMono", JETBRAINS_MONO);
+    add("NotoSansArabic", NOTO_SANS_ARABIC);
     let mut fallbacks = Vec::new();
     for f in CRAFT_FONTS {
         let name = format!("craft:{}:{}", f.family, f.style);
@@ -240,6 +242,7 @@ pub fn install_fonts(ctx: &egui::Context) {
     // Sans first: a mincho/serif fallback makes Japanese and Chinese UI text look like prose.
     let fallbacks = sans_first(fallbacks);
     fonts.families.entry(FontFamily::Proportional).or_default().insert(0, "DMSans".to_owned());
+    fonts.families.entry(FontFamily::Proportional).or_default().push("NotoSansArabic".to_owned());
     fonts.families.entry(FontFamily::Monospace).or_default().insert(0, "JetBrainsMono".to_owned());
     for fam in [FontFamily::Proportional, FontFamily::Monospace] {
         fonts.families.entry(fam).or_default().extend(fallbacks.iter().cloned());

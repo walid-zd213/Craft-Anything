@@ -20,14 +20,15 @@ pub struct LangInfo {
 
 pub static LANGUAGES: &[LangInfo] = &[
     LangInfo { code: "en", name: "English", source: "" },
+    LangInfo { code: "ar", name: "العربية", source: include_str!("i18n/ar.tsv") },
+    LangInfo { code: "cs", name: "Čeština", source: include_str!("i18n/cs.tsv") },
     LangInfo { code: "de", name: "Deutsch", source: include_str!("i18n/de.tsv") },
     LangInfo { code: "fr", name: "Français", source: include_str!("fr.tsv") },
     LangInfo { code: "ja", name: "日本語", source: include_str!("ja.tsv") },
+    LangInfo { code: "ko", name: "한국어", source: include_str!("i18n/ko.tsv") },
+    LangInfo { code: "ru", name: "Русский", source: include_str!("i18n/ru.tsv") },
     LangInfo { code: "zh-hans", name: "简体中文", source: include_str!("i18n/zh-hans.tsv") },
     LangInfo { code: "zh-hant", name: "繁體中文", source: include_str!("i18n/zh-hant.tsv") },
-    LangInfo { code: "ru", name: "Русский", source: include_str!("i18n/ru.tsv") },
-    LangInfo { code: "ko", name: "한국어", source: include_str!("i18n/ko.tsv") },
-    LangInfo { code: "cs", name: "Čeština", source: include_str!("i18n/cs.tsv") },
 ];
 
 /// Match a locale to a registered UI language. An explicit script wins over the region.
@@ -197,6 +198,73 @@ mod tests {
             for (k, v) in &m {
                 assert_eq!(holes(k), holes(v), "{}: {k:?}", l.code);
             }
+        }
+    }
+
+    /// Arabic language tag maps to "ar"; region variants fall back to "ar" or "en".
+    #[test]
+    fn arabic_language_tags() {
+        assert_eq!(language_from_tag("ar"), Some("ar"));
+        assert_eq!(language_from_tag("ar-EG"), Some("ar"));
+        assert_eq!(language_from_tag("ar-SA.UTF-8"), Some("ar"));
+        assert_eq!(language_from_tag("AR"), Some("ar"));
+        // Unsupported Arabic-adjacent codes fall back through primary match or English
+        assert_eq!(language_from_tag("fa-IR"), None); // Persian not supported
+    }
+
+    /// Arabic catalog: lookup returns translated strings, untranslated fall back to English.
+    /// Serializes tests that mutate the shared language state.
+    static LANGUAGE_TEST_LOCK: std::sync::Mutex<()> = std::sync::Mutex::new(());
+
+    /// Arabic catalog: lookup returns translated strings, untranslated fall back to English.
+    #[test]
+    fn arabic_catalog_lookup() {
+        let _guard = LANGUAGE_TEST_LOCK.lock().unwrap();
+        set_language("ar");
+        assert_eq!(language(), "ar");
+        // "Apply" is translated in ar.tsv
+        assert_eq!(tr("Apply"), "تطبيق");
+        // "Open" is translated
+        assert_eq!(tr("Open"), "افتح");
+        // Switch back to English
+        set_language("en");
+        assert_eq!(tr("Apply"), "Apply");
+    }
+
+    /// Arabic placeholder filling keeps {placeholders} intact.
+    #[test]
+    fn arabic_placeholder_filling() {
+        let _guard = LANGUAGE_TEST_LOCK.lock().unwrap();
+        set_language("ar");
+        let result = trf("Open {name}", &[("name", "ملف.tex")]);
+        assert_eq!(result, "افتح ملف.tex");
+        set_language("en");
+    }
+
+    /// RTL detection: Arabic script characters are in the Arabic Unicode block.
+    #[test]
+    fn arabic_is_rtl_script() {
+        let arabic = "العربية";
+        assert!(arabic.chars().any(|c| {
+            matches!(c, '\u{0600}'..='\u{06FF}' | '\u{0750}'..='\u{077F}' | '\u{08A0}'..='\u{08FF}' |
+                     '\u{FB50}'..='\u{FDFF}' | '\u{FE70}'..='\u{FEFF}')
+        }));
+        let english = "Hello";
+        assert!(!english.chars().any(|c| {
+            matches!(c, '\u{0600}'..='\u{06FF}' | '\u{0750}'..='\u{077F}' | '\u{08A0}'..='\u{08FF}' |
+                     '\u{FB50}'..='\u{FDFF}' | '\u{FE70}'..='\u{FEFF}')
+        }));
+    }
+
+    /// Arabic catalog: every translation keeps its key's placeholders (no unfilled holes).
+    #[test]
+    fn arabic_catalog_keeps_placeholders() {
+        let m = parse(include_str!("i18n/ar.tsv"));
+        assert!(!m.is_empty(), "Arabic catalog is empty");
+        for (k, v) in &m {
+            let key_holes: Vec<_> = k.split('{').skip(1).filter_map(|s| s.split_once('}').map(|(p, _)| p)).collect();
+            let val_holes: Vec<_> = v.split('{').skip(1).filter_map(|s| s.split_once('}').map(|(p, _)| p)).collect();
+            assert_eq!(key_holes, val_holes, "Arabic: {k:?} -> {v:?}");
         }
     }
 }

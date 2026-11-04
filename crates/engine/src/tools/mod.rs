@@ -91,6 +91,8 @@ pub mod apple_runtime;
 // Byte-signature and text search over a file, with native addresses.
 pub mod build_tools;
 pub mod byte_search;
+// Detects a file's type from its magic bytes.
+pub mod file_type_tools;
 // Rust programs: toolchain, crates, panic paths, symbols, cargo-auditable data.
 pub mod rust_tools;
 // Imports, exports, signature blocks, AI model headers, matching builds, exporting pseudo-C.
@@ -127,6 +129,7 @@ pub fn all() -> Vec<crate::ToolSpec> {
     v.extend(pin_tools::specs());
     v.extend(setup_tools::specs());
     v.extend(build_tools::specs());
+    v.extend(file_type_tools::specs());
     v.extend(window_tools::specs());
     v.extend(asset_tools::specs());
     v.extend(electron_runtime_tools::specs());

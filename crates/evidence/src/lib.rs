@@ -33,6 +33,24 @@ pub enum Confidence {
     Inferred,
 }
 
+impl Ord for Confidence {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        use std::cmp::Ordering;
+        let rank = |c: &Confidence| match c {
+            Confidence::Observed => 3,
+            Confidence::Derived => 2,
+            Confidence::Inferred => 1,
+        };
+        rank(self).cmp(&rank(other))
+    }
+}
+
+impl PartialOrd for Confidence {
+    fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
 impl Confidence {
     /// Plain-English label used by the Beginner UI.
     pub fn plain_label(self) -> &'static str {

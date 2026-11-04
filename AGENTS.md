@@ -140,6 +140,24 @@ These apply to every change by every agent and contributor, whether or not anyon
 `docs/extending.md` says where each kind of addition goes (tools, target kinds, checks, stacks, coding agents,
 asset providers, engines, plugins).
 
+### Adding a new UI language (i18n)
+
+UI strings live in `crates/ui-egui/src/i18n/`. English is the built-in lookup key; each other language is a
+TSV catalog (`key<TAB>translation`, `#` comments) included via `include_str!`.
+
+To add a language `xx`:
+
+1. Create `crates/ui-egui/src/i18n/xx.tsv` with `key<TAB>translation` rows. Keep `{placeholders}` and
+   special characters identical to the key. Actual escape sequences (e.g. `\n`) must match the key;
+   literal Unicode characters (e.g. `…`) are not escape sequences and must also match exactly.
+   Lines starting with `#` are comments.
+2. Add a `LangInfo { code: "xx", name: "...", source: include_str!("i18n/xx.tsv") }` entry to
+   `LANGUAGES` in `crates/ui-egui/src/i18n.rs` (alphabetical by code).
+3. The `tr()` fallback means untranslated keys show in English—partial catalogs are safe to ship.
+4. Do **not** add the new language to `xtask/src/i18n_coverage.rs` until its catalog covers all
+   lookup keys; that audit fails on missing entries.
+5. Optionally add `README.xx.md` and link it from `README.md`'s language list.
+
 ## Pitfalls
 
 `docs/pitfalls.md` lists mistakes already made here (git, tests, builds, design) and the rule for each.

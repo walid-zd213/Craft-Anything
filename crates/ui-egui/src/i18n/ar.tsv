@@ -1,0 +1,1425 @@
+# ar: Arabic UI translations. Licensed MIT OR Apache-2.0.
+# UTF-8: English source<TAB>Arabic translation. Keep placeholders and escapes intact.
+ GB	GB
+ and {n} more	و {n} المزيد
+ {ascii}	{ascii}
+ · ${c:.2}	· ${c:.2}
+ · ssh {h}	· ssh {h}
+(1 picture attached)	(1 صورة attached)
+({n} pictures attached)	({n} صور attached)
+, ${c:.4}	, ${c:.4}
+.NET application graph	.NET تطبيق graph
+.NET apps	.NET تطبيقات
+.NET assembly overview	.NET تجميع overview
+.NET native calls	.NET native calls
+.NET types and methods	.NET types و methods
+/btw {}	/btw {}
+0x… or number	0x… أو رقم
+A .NET program (C#, F# or VB)	 .NET برنامج (C#, F# أو VB)
+A DOS program	 DOS برنامج
+A Java program	 ملف Java برنامج
+A Linux (or Unix) program	 Linux أو Unix) برنامج
+A Mac or iPhone program	 Mac أو iPhone برنامج
+A SQLite database (how an app stores its data)	 قاعدة بيانات SQLite قاعدة بيانات كيف  تطبيق stores its بيانات
+A WebAssembly module (code that runs in a browser)	 WebAssembly وحدة كود that runs في  متصفح
+A Windows program	 Windows برنامج
+A ZIP archive	 أرشيف ZIP أرشف
+A bundle of ready-made code that many programs share.	 bundle من ready-made كود that كثير برامج شارك
+A coding agent such as Claude Code builds it, and an AI answers your questions in plain words. Change this any time in Settings → AI.	 coding agent such كما Claude كود builds it, و  AI answers your questions في plain words. Change this any وقت في إعدادات → AI.
+A command's output shows here when it finishes.	 command's output shows هنا متى it finishes.
+A copy to try something else from here.	 انسخ إلى try something إلا من هنا
+A file of machine code that a computer can run directly, like an .exe or an app.	 ملف من آلة كود that  كمبيوتر can شغّل directly, like  ملف تنفيذ أو  تطبيق
+A file that a computer can run as a program.	 ملف that  كمبيوتر can شغّل كما  برنامج
+A file that links packed web code back to the original, readable source files.	 ملف that links packed ويب كود الخلف إلى  original, readable المصدر ملفات
+A file we don't recognise yet	 ملف we don't recognise yet
+A first look at a file you're unsure about, without running it.	 first look عند  ملف you're unsure حول without running it.
+A folder	 مجلد
+A folder has no bytes of its own	 مجلد has لا بايتات من its own
+A free reverse-engineering tool from the NSA. Deep mode uses it for extra detail; Clean room mode never does.	 free reverse-engineering أداة من  NSA. Deep mode uses it ل extra detail; نظّف room mode never does.
+A frozen copy (recommended)	 frozen انسخ (recommended)
+A frozen copy takes {size}. That's a lot of space: a light copy takes {light}.	 frozen انسخ takes {size}. That's  lot من space:  light انسخ takes {light}.
+A frozen copy takes {size}; a light copy takes {light}.	 frozen انسخ takes {size};  light انسخ takes {light}.
+A game	 game
+A game's files	 game's ملفات
+A light copy	 light انسخ
+A locked room for running a program so it can't touch the rest of your computer.	 locked room ل running  برنامج so it can't touch  rest من your كمبيوتر
+A map of which functions call which other functions.	 map من أي functions call أي other functions.
+A name the program's author gave to a function or variable that survived in the file.	 اسم  program's author gave إلى  دالة أو متغير that survived في  ملف
+A named piece of a program that does one job, like "add two numbers" or "save the file".	 named piece من  برنامج that does one job, like أضف two أرقام أو احفظ  ملف
+A number that says where something is in a program's memory, like a house number.	 رقم that says أين something is في  program's ذاكرة like  house رقم
+A piece of text stored inside a program, like a message, a web address or a file name.	 piece من نص stored داخل  برنامج like  رسالة  ويب عنوان أو  ملف اسم
+A program, an app bundle, an APK, a JavaScript bundle, a folder… or drop it on the window.	 برنامج  تطبيق bundle,  ملف تطبيق أندرويد  JavaScript bundle,  folder… أو drop it على  نافذة
+A recording of network traffic	 recording من شبكة traffic
+A region of a program as it sits in memory while running.	 region من  برنامج كما it sits في ذاكرة while running.
+A region of a program file with one purpose: code, text, pictures, settings.	 region من  برنامج ملف مع one purpose: كود نص صور إعدادات
+A rule of thumb. Usually right, sometimes wrong, so we label the result as a best guess.	 rule من thumb. Usually يمين sometimes wrong, so we سمّ  result كما  best guess.
+A saved, checkable record of something we found, with how sure we are and where we found it.	 saved, checkable record من something we found, مع كيف sure we are و أين we found it.
+A script or web page	 نص برمجي أو ويب صفحة
+A set of commands a program offers to other programs.	 set من commands  برنامج offers إلى other برامج
+A simple snake game	 بسيط snake game
+A small download (under 200 MB). Free, no account needed.	 صغير نزّل تحت 200 MB). Free, لا حساب needed.
+A small file that lists what an app is called, what it needs and what it's allowed to do.	 صغير ملف that lists ماذا  تطبيق is called, ماذا it needs و ماذا it's allowed إلى do.
+A smart contract (EVM bytecode)	 smart contract (EVM رمز بايت
+A way of writing bytes as two-character codes (00 to FF). The rawest view of a file.	 way من writing بايتات كما two-character codes (00 إلى FF).  rawest عرض من  ملف
+A way to build desktop apps out of web pages. The app is basically a website with its own browser.	 way إلى ابنِ سطح مكتب تطبيقات out من ويب pages.  تطبيق is basically  موقع إلكتروني مع its own متصفح
+A website	 موقع إلكتروني
+A website for my bakery	 موقع إلكتروني ل my bakery
+AI	AI
+AI cost	AI cost
+AI cost (estimate)	AI cost (estimate)
+AI cost (part estimate)	AI cost (part estimate)
+AI model file	AI model ملف
+AI name	AI اسم
+AI use this session	AI use this session
+API boundary	واجهة برمجة تطبيقات boundary
+API key	واجهة برمجة تطبيقات مفتاح
+API key (stored in your system keychain)	واجهة برمجة تطبيقات مفتاح (stored في your system keychain)
+API key, if it needs one	واجهة برمجة تطبيقات مفتاح إذا it needs one
+About 10 GB. Free for personal use with a Unity account.	حول 10 GB. Free ل personal use مع  Unity حساب
+About 60 GB, an Epic Games account, and Visual Studio's C++ tools.	حول 60 GB,  Epic Games حساب و Visual Studio's C++ أدوات
+About 60 GB, an Epic Games account, and Xcode.	حول 60 GB,  Epic Games حساب و Xcode.
+Add	أضف
+Add Unreal's Linux C++ toolchain	أضف Unreal's Linux C++ toolchain
+Add Visual Studio's C++ tools	أضف Visual Studio's C++ أدوات
+Add a brain	أضف  brain
+Add a fal.ai key	أضف  fal.ai مفتاح
+Add a folder…	أضف  folder…
+Add a plugin	أضف  plugin
+Add an AI brain and I'll read this evidence for you, answer follow-up questions and point at the proof.	أضف  AI brain و I'll read this evidence ل you, answer follow-up questions و point عند  proof.
+Add an AI by its address	أضف  AI بواسطة its عنوان
+Add another	أضف another
+Add it again, to choose another account's folder for it.	أضف it again, إلى اختر another account's مجلد ل it.
+Add more info. The builder reads it at its next step.	أضف المزيد info.  builder reads it عند its التالي step.
+Add pictures	أضف صور
+Add pictures of the original	أضف صور من  original
+Add pictures of the original (optional: screenshots help it look right)	أضف صور من  original (optional: screenshots مساعدة it look يمين
+Add to a running build	أضف إلى  running ابنِ
+Added	Added
+Added {n} picture(s). The builder uses them from your next change.	Added {n} picture(s).  builder uses them من your التالي change.
+Address to file offset	عنوان إلى ملف offset
+Adds its decompiler to Deep mode. Craft Anything can download and set it up for you.	Adds its مفكّك التجميع إلى Deep mode. Craft Anything can نزّل و set it فوق ل you.
+Advanced	Advanced
+After installing one, look for it again.	After installing one, look ل it again.
+Agent	Agent
+Allow generated assets	اسمح generated assets
+Allow once	اسمح once
+Allowed for this project	Allowed ل this مشروع
+Allowed for this project.	Allowed ل this مشروع
+Allowed in	Allowed في
+Allowed once	Allowed once
+Allowed once.	Allowed once.
+Also list projects from	Also list مشاريع من
+Always for this project	Always ل this مشروع
+An Android app	 Android تطبيق
+An Android app package: the file you install on a phone.	 Android تطبيق حزمة  ملف you ثبّت على  phone.
+An Apple settings file (plist)	 Apple إعدادات ملف (plist)
+An app	 تطبيق
+An app or a file	 تطبيق أو  ملف
+Analyse a JavaScript app	Analyse  JavaScript تطبيق
+Analyse a page's JavaScript	Analyse  page's JavaScript
+Android app code (DEX)	Android تطبيق كود (DEX)
+Android app components	Android تطبيق components
+Android app package	Android تطبيق حزمة
+Android apps	Android تطبيقات
+Android class	Android فئة
+Android method bytecode	Android طريقة رمز بايت
+Android resources	Android resources
+Annotate function	علّق توضيحيًا دالة
+Another build is working, so this one waits its turn.	Another ابنِ is working, so this one waits its turn.
+Another model	Another model
+Answer a project's question	Answer  project's question
+Answer any of them in a message below.	Answer any من them في  رسالة أسفل
+Answered by {name}	Answered بواسطة {name}
+Answers come from {brain}. To build, set up a coding agent in Settings → AI.	Answers come من {brain}. إلى ابنِ set فوق  coding agent في إعدادات → AI.
+App	تطبيق
+App details on device	تطبيق details على device
+Apple apps	Apple تطبيقات
+Apply	تطبيق
+Apply model options	Apply model خيارات
+Approve an agent action	Approve  agent action
+Apps and games: keep refining until they look this alike to your pictures. Off, the likeness is only reported.	تطبيقات و games: keep refining until they look this alike إلى your صور Off,  likeness is only reported.
+Architectures	Architectures
+Archive	أرشف
+Archives	Archives
+Ask a question	Ask  question
+Ask about a build	Ask حول  ابنِ
+Ask about the build	Ask حول  ابنِ
+Ask about the build, e.g. "where are the latest files?" Nothing changes and no build starts.	Ask حول  ابنِ e.g. أين are  latest ملفات Nothing changes و لا ابنِ starts.
+Ask about this game	Ask حول this game
+Ask anything, e.g. "What does this program do?"	Ask anything, e.g. ماذا does this برنامج do?"
+Ask before running anything	Ask before running anything
+Ask each time	Ask each وقت
+Ask first	Ask first
+Ask for a change	Ask ل  change
+Ask for a change, e.g. "bigger buttons" or "add a dark mode"	Ask ل  change, e.g. "bigger buttons" أو أضف  dark mode"
+Ask for a change, e.g. "make it faster" or "add a high-score table"	Ask ل  change, e.g. "make it faster" أو أضف  high-score table"
+Ask for a change, e.g. "make the header blue" or "add a contact form"	Ask ل  change, e.g. "make  header أزرق أو أضف  contact form"
+Ask in your own words. Every answer shows how sure we are, and the proof.	Ask في your own words. Every answer shows كيف sure we are, و  proof.
+Ask me	Ask me
+Ask the agent about this	Ask  agent حول this
+Ask the agent about this target. It cites evidence for every claim.	Ask  agent حول this target. It cites evidence ل every claim.
+Ask the agent…	Ask  agent…
+Ask the person	Ask  person
+Ask: "How does the % key work?"	Ask: كيف does  % مفتاح work?"
+Ask: "Is it safe to run?"	Ask: "Is it safe إلى شغّل
+Ask: "What does it send over the internet?"	Ask: ماذا does it أرسل فوق  إنترنت
+Asking for its models…	Asking ل its models…
+Asset catalog	Asset catalog
+At most this many rounds of fixes after the first build.	عند الأكثر this كثير rounds من fixes after  first ابنِ
+Attach pictures	أرفق صور
+Attach pictures (or drop or paste them here)	أرفق صور أو drop أو الصق them هنا
+Auto mode	Auto mode
+Automatic	Automatic
+Automatic ({name})	Automatic ({name})
+Back	الخلف
+Best guess	Best guess
+Best guess: a reasonable reading, but not proven.	Best guess:  reasonable reading, لكن not proven.
+Binary layout	ثنائي layout
+Blocked	Blocked
+Bookmark	Bookmark
+Budget for a new project	Budget ل  جديد مشروع
+Bug report	Bug report
+Build	ابنِ
+Build a rebuild ledger	ابنِ  rebuild ledger
+Build a stand-in backend	ابنِ  stand-in backend
+Build with	ابنِ مع
+Build with this	ابنِ مع this
+Build with {name}	ابنِ مع {name}
+Build with {name} instead	ابنِ مع {name} instead
+Build without it	ابنِ without it
+Builder's questions:	Builder's questions:
+Building	Building
+Building needs a coding agent on this computer (Claude Code, Codex or Gemini CLI: install one and sign in to it once in its own window), or an AI with an API key. Craft Anything never sees your account.	Building needs  coding agent على this كمبيوتر (Claude كود Codex أو Gemini CLI: ثبّت one و sign في إلى it once في its own نافذة أو  AI مع  واجهة برمجة تطبيقات مفتاح Craft Anything never sees your حساب
+Building needs a coding agent such as Claude Code, or an AI with an API key.	Building needs  coding agent such كما Claude كود أو  AI مع  واجهة برمجة تطبيقات مفتاح
+Builds	Builds
+Builds and answers may use it again.	Builds و answers may use it again.
+Builds at once	Builds عند once
+Builds keep going without stopping to ask you before an action. The builder still never deletes outside its project, changes system settings or publishes anything, and stays within each project's asset budget.	Builds keep going without stopping إلى ask you before  action.  builder still never deletes خارجي its مشروع changes system إعدادات أو publishes anything, و stays within each project's asset budget.
+Builds use this one. Click to choose automatically again.	Builds use this one. Click إلى اختر automatically again.
+Built by	Built بواسطة
+Built with	Built مع
+Built with {stack}, as you asked, so no game engine is needed.	Built مع {stack}, كما you asked, so لا game engine is needed.
+Call graph	Call graph
+Call path	Call مسار
+Call the build done	Call  ابنِ تم
+Called done. A new message carries on from here.	Called تم  جديد رسالة carries على من هنا
+Cancel	Cancel
+Cancel: don't use this folder	Cancel: don't use this مجلد
+Capture a website for rebuilding	Capture  موقع إلكتروني ل rebuilding
+Capture inventories	Capture inventories
+Capture menus, dialogs and tabs	Capture menus, dialogs و tabs
+Change	Change
+Change a setting	Change  إعداد
+Change an AI's model	Change  AI's model
+Change how hard an AI thinks	Change كيف صعب  AI thinks
+Change it	Change it
+Change…	Change…
+Check	Check
+Check .NET native calls	Check .NET native calls
+Check a rebuild claim	Check  rebuild claim
+Check a scripted web session	Check  scripted ويب session
+Check an answer	Check  answer
+Check decompiled C#	Check decompiled C#
+Check my build	Check my ابنِ
+Check the JEB connection	Check  JEB connection
+Check the asset keys	Check  asset مفاتيح
+Check the setup	Check  setup
+Check {n}	Check {n}
+Check {n}: about {s}% like the original	Check {n}: حول {s}% like  original
+Checked against Godot's official checksums before it's used.	Checked against Godot's official checksums before it's used.
+Checking	Checking
+Choose a file	اختر  ملف
+Choose a folder…	اختر  folder…
+Choose a function, string or section to see it here.	اختر  دالة string أو section إلى see it هنا
+Choose an AI's job	اختر  AI's job
+Choose an agent's model and thinking	اختر  agent's model و thinking
+Choose the folder Ghidra is installed in.	اختر  مجلد Ghidra is installed في
+Choose what the builder's questions get	اختر ماذا  builder's questions get
+Choose what to recreate, say what you want, then press Start.	اختر ماذا إلى recreate, say ماذا you want, ثم press ابدأ
+Choose your project's folder…	اختر your project's folder…
+Choose…	Choose…
+Classes	Classes
+Claude Code folder (CLAUDE_CONFIG_DIR)	Claude كود مجلد (CLAUDE_CONFIG_DIR)
+Clean room	نظّف room
+Clean room / Deep	نظّف room / Deep
+Clean room never reads the original's code, files or page source. Deep mode reads them with every tool Craft Anything has.	نظّف room never reads  original's كود ملفات أو صفحة المصدر Deep mode reads them مع every أداة Craft Anything has.
+Clean room never reads the original's code, files or page source: it works from what you can see. Deep reads them with every tool, and with Ghidra when it's installed. Every finding records which was used.	نظّف room never reads  original's كود ملفات أو صفحة المصدر it works من ماذا you can see. Deep reads them مع every أداة و مع Ghidra متى it's installed. Every finding records أي was used.
+Clean room on	نظّف room على
+Clean room or Deep	نظّف room أو Deep
+Clean room: nothing inside the original is read. We work from what you can see: pictures, the page as a visitor sees it, and watching it run.	نظّف room: nothing داخل  original is read. We work من ماذا you can see: صور  صفحة كما  visitor sees it, و watching it شغّل
+Clear finished	واضح finished
+Close	أغلق
+Close a Frida session	أغلق  Frida session
+Close a GDB session	أغلق  GDB session
+Close a Rizin debug session	أغلق  Rizin تصحيح أخطاء session
+Close a pinned build	أغلق  pinned ابنِ
+Close it	أغلق it
+Close it first.	أغلق it first.
+Close the website	أغلق  موقع إلكتروني
+Code reconstructed from a program that looks like the C language. Close to what the program does, but not its original source.	كود reconstructed من  برنامج that looks like  C language. أغلق إلى ماذا  برنامج does, لكن not its original المصدر
+Code signature	كود signature
+Coding agent app	Coding agent تطبيق
+Command palette (Ctrl/⌘ K)	Command palette (Ctrl/⌘ K)
+Commands:	Commands:
+Compare WebAssembly interfaces	Compare WebAssembly interfaces
+Compare module exports	Compare وحدة exports
+Compare two .NET builds	Compare two .NET builds
+Compare two app versions	Compare two تطبيق versions
+Compare two artifacts	Compare two artifacts
+Compare two evidence bundles	Compare two evidence bundles
+Compare two functions	Compare two functions
+Compare two page captures	Compare two صفحة captures
+Compare two runs	Compare two runs
+Compare two screenshots	Compare two screenshots
+Comparing and rebuilding	Comparing و rebuilding
+Compiled Python file	Compiled Python ملف
+Connect	اتصل
+Connect agent apps	اتصل agent تطبيقات
+Connect to a browser	اتصل إلى  متصفح
+Connect {name}	اتصل {name}
+Connected devices	متصل devices
+Connected phone	متصل phone
+Context window	Context نافذة
+Continue	استمر
+Contradicted	Contradicted
+Control-flow graph: a map of every path a function can take, like a flowchart.	Control-flow graph:  map من every مسار  دالة can take, like  flowchart.
+Copies share the files it saves beside itself.	Copies شارك  ملفات it saves beside itself.
+Copy a file off the phone	انسخ  ملف off  phone
+Copy a file to the phone	انسخ  ملف إلى  phone
+Copy an app off the phone	انسخ  تطبيق off  phone
+Copy the command	انسخ  command
+Copy the evidence id	انسخ  evidence id
+Couldn't add the pictures:	Couldn't أضف  صور
+Couldn't answer:	Couldn't answer:
+Couldn't attach the pictures:	Couldn't أرفق  صور
+Couldn't look through that folder.	Couldn't look through that مجلد
+Couldn't open it.	Couldn't افتح it.
+Couldn't open the folder.	Couldn't افتح  مجلد
+Couldn't open {}: {}	Couldn't افتح {}: {}
+Couldn't start a worker thread: {e}	Couldn't ابدأ  worker thread: {e}
+Couldn't start it.	Couldn't ابدأ it.
+Coverage unknown	Coverage unknown
+Craft Anything	Craft Anything
+Craft Anything can't build with {engine}, so Unity is the closest match.	Craft Anything can't ابنِ مع {engine}, so Unity is  closest match.
+Craft Anything or the computer closed while it was working. Everything so far is kept; Continue picks up where it stopped.	Craft Anything أو  كمبيوتر closed while it was working. Everything so بعيد is kept; استمر picks فوق أين it stopped.
+Craft Anything reads its code and files with every tool it has. For your private use.	Craft Anything reads its كود و ملفات مع every أداة it has. ل your private use.
+Craft Anything reads the original's code, files and page source with every tool it has, and with Ghidra when it's installed.	Craft Anything reads  original's كود ملفات و صفحة المصدر مع every أداة it has, و مع Ghidra متى it's installed.
+Craft Anything report.md	Craft Anything report.md
+Craft Anything's records, checks and anything it built in app/ are deleted. Your own files in the folder stay as they are.	Craft Anything's records, checks و anything it built في app/ are deleted. Your own ملفات في  مجلد stay كما they are.
+Crash dump	Crash dump
+Create the project	أنشئ  مشروع
+Critical	Critical
+Cross-reference: a place in the program that uses or calls the thing you're looking at.	Cross-reference:  place في  برنامج that uses أو calls  thing you're looking عند
+Cross-references	Cross-references
+Cross-references: the places in the program that use or call the thing you're looking at.	Cross-references:  places في  برنامج that use أو call  thing you're looking عند
+Current document	Current document
+Cursor address	Cursor عنوان
+Cursor function	Cursor دالة
+Custom	Custom
+Cutter command	Cutter command
+DOS load image	DOS load صورة
+Databases	Databases
+Decide yourself	Decide yourself
+Decode a radio recording	فك الترميز  radio recording
+Decompile	فك التجميع
+Decompile Java with Vineflower	فك التجميع ملف Java مع Vineflower
+Decompile many	فك التجميع كثير
+Decompile with JEB	فك التجميع مع JEB
+Deep	Deep
+Deep mode now decompiles with Ghidra. The first look at a large program can take several minutes.	Deep mode الآن decompiles مع Ghidra.  first look عند  كبير برنامج can take several minutes.
+Deep mode on	Deep mode على
+Deep: we read its code, files and page source with every tool we have, and with Ghidra when it's installed. Click to switch.	Deep: we read its كود ملفات و صفحة المصدر مع every أداة we have, و مع Ghidra متى it's installed. Click إلى switch.
+Default	Default
+Delete a project	احذف  مشروع
+Delete it	احذف it
+Delete the project	احذف  مشروع
+Delete {name}?	احذف {name}?
+Deleted.	Deleted.
+Deleted. Your own files are still in the folder.	Deleted. Your own ملفات are still في  مجلد
+Delete…	Delete…
+Deliberately scrambled to make it hard to read, without changing what it does.	Deliberately scrambled إلى make it صعب إلى read, without changing ماذا it does.
+Demangle Swift symbols	Demangle Swift symbols
+Details	Details
+Details about the selected item appear here.	Details حول  selected item appear هنا
+Detect	اكتشف
+Device details	Device details
+Device features	Device features
+Device folder	Device مجلد
+Device log	Device log
+Disassemble sBPF code	فك التجميع sBPF كود
+Disassembly	Disassembly
+Disconnect agent apps	فصل agent تطبيقات
+Dismiss	Dismiss
+Dispatch metadata	Dispatch metadata
+Display info	Display info
+Do you have permission?	Do you have permission?
+Does it talk to the internet?	Does it talk إلى  إنترنت
+Does it track me?	Does it track me?
+Don't allow	Don't اسمح
+Don't ask again (you can change this in Settings)	Don't ask again (you can change this في إعدادات
+Done	تم
+Download	نزّل
+Download Godot {v}	نزّل Godot {v}
+Download Unity Hub	نزّل Unity Hub
+Download and use Ghidra	نزّل و use Ghidra
+Download it from unity.com and install it.	نزّل it من unity.com و ثبّت it.
+Download it from unrealengine.com and install it.	نزّل it من unrealengine.com و ثبّت it.
+Download the Epic Games Launcher	نزّل  Epic Games Launcher
+Downloads keep going in the background.	Downloads keep going في  background.
+Drive an app's screen	محرك  app's شاشة
+Drop a calculator app (or any small program) on the window.	Drop  calculator تطبيق أو any صغير برنامج على  نافذة
+Drop a file or app anywhere in this window.	Drop  ملف أو تطبيق anywhere في this نافذة
+Drop the file on the window. We only read it; nothing runs.	Drop  ملف على  نافذة We only read it; nothing runs.
+Drop to attach	Drop إلى أرفق
+Drop to open it	Drop إلى افتح it
+Duplicate	Duplicate
+Duplicate a project	Duplicate  مشروع
+Duplicate the project	Duplicate  مشروع
+Each answer says how sure we are: Seen it, Worked it out or Best guess.	Each answer says كيف sure we are: Seen it, Worked it out أو Best guess.
+Edit a project file	حرر  مشروع ملف
+Edit them in place	حرر them في place
+Effort:	Effort:
+Electron and JavaScript	Electron و JavaScript
+Electron fuses	Electron fuses
+Engines	Engines
+Engines and settings	Engines و إعدادات
+Enter a full web address, like example.com or https://example.com/page.	Enter  ممتلئ ويب عنوان like example.com أو https://example.com/page.
+Enter to send · Shift+Enter for a new line	Enter إلى أرسل · Shift+Enter ل  جديد line
+Epic's own installer. It only opens if Epic's signature checks out.	Epic's own installer. It only opens إذا Epic's signature checks out.
+Essentials	Essentials
+Every build of this project.	Every ابنِ من this مشروع
+Every finding is saved here with how sure we are.	Every finding is saved هنا مع كيف sure we are.
+Every tool as well: a workbench with functions, bytes, references and evidence.	Every أداة كما well:  workbench مع functions, بايتات references و evidence.
+Everything found so far, as a Markdown file.	Everything found so بعيد كما  Markdown ملف
+Everything so far is kept. Continue picks up where it stopped.	Everything so بعيد is kept. استمر picks فوق أين it stopped.
+Evidence	Evidence
+Evidence ledger	Evidence ledger
+Evidence so far	Evidence so بعيد
+Explain a function	Explain  دالة
+Explain like I'm new	Explain like I'm جديد
+Export a report	صادر  report
+Export a report (Markdown)	صادر  report (Markdown)
+Export captured scripts	صادر captured scripts
+Export evidence	صادر evidence
+Export report	صادر report
+Extended	Extended
+Extract an archive	استخرج  أرشف
+Extract firmware	استخرج firmware
+Extract with this	استخرج مع this
+Extracts	Extracts
+File formats	ملف formats
+Files packed inside a file	ملفات packed داخل  ملف
+Filter	صّفّ
+Filter by name	صّفّ بواسطة اسم
+Filter the files	صّفّ  ملفات
+Filter…	Filter…
+Find Android classes	ابحث Android classes
+Find Java classes	ابحث ملف Java classes
+Find a call path	ابحث  call مسار
+Find a game's files	ابحث  game's ملفات
+Find an app	ابحث  تطبيق
+Find in-page MCP tools	ابحث in-page MCP أدوات
+Find it automatically	ابحث it automatically
+Find out how any software works, then craft your own.	ابحث out كيف any software works, ثم craft your own.
+Find the original source line	ابحث  original المصدر line
+Firmware regions	Firmware regions
+Fold the sidebar	Fold  sidebar
+Folders of projects, and projects started in a folder you picked. Removing one only takes it off the list.	مجلدات من مشاريع و مشاريع started في  مجلد you picked. Removing one only takes it off  list.
+Follow the installer that opened. Come back here when it's done.	Follow  installer that opened. Come الخلف هنا متى it's تم
+Follow the steps on rustup.rs, then come back here.	Follow  steps على rustup.rs, ثم come الخلف هنا
+For everything you make, like the switch in the title bar.	ل everything you make, like  switch في  عنوان bar.
+For example: a website for my bakery	ل example:  موقع إلكتروني ل my bakery
+For example: add a dark mode	ل example: أضف  dark mode
+For example: recreate this website	ل example: recreate this موقع إلكتروني
+For example: the same app, but simpler	ل example:  same تطبيق لكن simpler
+For example: the same game, with a high-score table	ل example:  same game, مع  high-score table
+Force-stop an app	Force-stop  تطبيق
+Forget the key	Forget  مفتاح
+Found on this computer	Found على this كمبيوتر
+Found {} AI option(s) on this computer	Found {} AI option(s) على this كمبيوتر
+Frida devices	Frida devices
+Frida instrumentation	Frida instrumentation
+Frida processes	Frida processes
+Frida session status	Frida session status
+From	من
+Frozen copy	Frozen انسخ
+Function address	دالة عنوان
+Function assembly	دالة تجميع
+Function dossier	دالة dossier
+Function info	دالة info
+Function instructions	دالة instructions
+Function references	دالة references
+Functions	Functions
+GDB command	GDB command
+GDB session status	GDB session status
+Game assets	Game assets
+Game engines	Game engines
+Game files	Game ملفات
+General	General
+Generate a 3D model	Generate  3D model
+Generate a picture	Generate  صورة
+Generate custom pictures and models	Generate custom صور و models
+Generated art (games)	Generated art (games)
+Generated assets	Generated assets
+Generated pictures and 3D models are made with fal.ai.	Generated صور و 3D models are made مع fal.ai.
+Get Ghidra	Get Ghidra
+Get Ghidra for Deep mode	Get Ghidra ل Deep mode
+Get Unity Hub	Get Unity Hub
+Get a key at {name}	Get  مفتاح عند {name}
+Get the Epic Games Launcher	Get  Epic Games Launcher
+Get {name}	Get {name}
+Getting Ghidra	Getting Ghidra
+Getting Godot	Getting Godot
+Getting Unity Hub	Getting Unity Hub
+Getting the Epic Games Launcher	Getting  Epic Games Launcher
+Ghidra	Ghidra
+Ghidra folder	Ghidra مجلد
+Ghidra is ready	Ghidra is جاهز
+Ghidra is ready. Deep mode uses it from now on.	Ghidra is جاهز Deep mode uses it من الآن على
+Ghidra isn't installed, so the built-in decompiler stands in. Get it in Settings → Engines.	Ghidra isn't installed, so  built-in مفكّك التجميع stands في Get it في إعدادات → Engines.
+Ghidra isn't on this computer yet, so the built-in decompiler stands in.	Ghidra isn't على this كمبيوتر yet, so  built-in مفكّك التجميع stands في
+Ghidra will use half of this computer's memory (up to {gb} GB).	Ghidra will use half من this computer's ذاكرة فوق إلى {gb} GB).
+Ghidra will use up to {gb} GB of memory.	Ghidra will use فوق إلى {gb} GB من ذاكرة
+Ghidra, a free reverse-engineering tool from the NSA, gives Deep mode richer decompiled code and types.	Ghidra,  free reverse-engineering أداة من  NSA, gives Deep mode richer decompiled كود و types.
+Go home	Go home
+Go program details	Go برنامج details
+Go to address	Go إلى عنوان
+Go to offset (0x…)	Go إلى offset (0x…)
+Go to the project	Go إلى  مشروع
+Good enough	Good enough
+Got it	Got it
+Graph	Graph
+Half of this computer's memory, up to {gb} GB.	Half من this computer's ذاكرة فوق إلى {gb} GB.
+Harnesses	Harnesses
+Here's a first look:	Here's  first look:
+Here's what I found on that page:	Here's ماذا I found على that صفحة
+Hex	Hex
+Hide pinned builds	أخف pinned builds
+Hide the answer	أخف  answer
+Hide the console	أخف  console
+High	High
+Home	Home
+How alike a rebuild must look to the original before refining stops.	كيف alike  rebuild must look إلى  original before refining stops.
+How closely may Craft Anything look at it?	كيف closely may Craft Anything look عند it?
+How complete is the rebuild	كيف كامل is  rebuild
+How do I open an app?	كيف do I افتح  تطبيق
+How do the window and the page talk to each other?	كيف do  نافذة و  صفحة talk إلى each other?
+How does the % key work?	كيف does  % مفتاح work?
+How is this app built?	كيف is this تطبيق built?
+How is this app put together?	كيف is this تطبيق put together?
+How many projects may build at the same time. More wait their turn.	كيف كثير مشاريع may ابنِ عند  same وقت المزيد wait their turn.
+How should the builder use them?	كيف should  builder use them?
+I have Ghidra	I have Ghidra
+I have permission	I have permission
+I want to make things work together	I want إلى make things work together
+I'm checking whether it's safe	I'm checking whether it's safe
+I'm keeping old software alive	I'm keeping old software alive
+I'm learning how things work	I'm learning كيف things work
+I'm new to this	I'm جديد إلى this
+ILSpy decompile	ILSpy فك التجميع
+Ideas:	Ideas:
+Identify a Flutter build	حدد  Flutter ابنِ
+Import a source folder	استورد  المصدر مجلد
+Import evidence	استورد evidence
+Imports / Exports	Imports / Exports
+In Deep mode this one takes a game's own files out after the study. Click to stop.	في Deep mode this one takes  game's own ملفات out after  study. Click إلى أوقف
+In Unity Hub: sign in (or make a free account) and accept the free Personal licence. Then open Installs, press Install Editor and choose the recommended version. About 10 GB.	في Unity Hub: sign في أو make  free حساب و قبول  free Personal licence. ثم افتح Installs, press ثبّت Editor و اختر  recommended version. حول 10 GB.
+In the launcher: sign in, open Unreal Engine, then Library, and press + next to Engine Versions to install one. About 60 GB.	في  launcher: sign في افتح Unreal Engine, ثم مكتبة و press + التالي إلى Engine Versions إلى ثبّت one. حول 60 GB.
+In use	في use
+Inside	داخل
+Inspect a Dart AOT snapshot	Inspect  Dart AOT snapshot
+Inspect a network recording	Inspect  شبكة recording
+Inspect a web page	Inspect  ويب صفحة
+Inspect an Electron page	Inspect  Electron صفحة
+Inspect data	Inspect بيانات
+Inspect instruction	Inspect instruction
+Inspector	Inspector
+Install Rust	ثبّت Rust
+Install Unity Hub	ثبّت Unity Hub
+Install Visual Studio Community (free) and tick "Game development with C++".	ثبّت Visual Studio Community (free) و tick "Game development مع C++".
+Install Xcode	ثبّت Xcode
+Install an app	ثبّت  تطبيق
+Install an engine	ثبّت  engine
+Install the launcher	ثبّت  launcher
+Installed	Installed
+Installed apps	Installed تطبيقات
+Inter-process communication: how two parts of an app (or two apps) send messages to each other.	Inter-process communication: كيف two parts من  تطبيق أو two تطبيقات أرسل رسائل إلى each other.
+Interface Builder documents	واجهة Builder documents
+Interrupted	Interrupted
+Inventory an archive or app bundle	Inventory  أرشف أو تطبيق bundle
+Investigating	Investigating
+Investigation so far	Investigation so بعيد
+Is Apktool available?	Is Apktool متوفر
+Is adb available?	Is adb متوفر
+Is an asset key set up?	Is  asset مفتاح set فوق
+Is anything in here a program?	Is anything في هنا  برنامج
+Is anything sensitive saved in plain text?	Is anything sensitive saved في plain نص
+Is it safe to look inside programs?	Is it safe إلى look داخل برامج
+Is it safe to run?	Is it safe إلى شغّل
+Is there any readable text inside?	Is هناك any readable نص داخل
+Is this file safe to open?	Is this ملف safe إلى افتح
+It closed straight away.	It closed straight away.
+It closed straight away. It said:	It closed straight away. It said:
+It isn't on this computer yet. Craft Anything can download Ghidra {version} and the Java runtime it needs (about {mb} MB), check both against their publishers' checksums, and set them up in its own folder. Nothing else on your computer changes.	It isn't على this كمبيوتر yet. Craft Anything can نزّل Ghidra {version} و  ملف Java runtime it needs حول {mb} MB), check both against their publishers' checksums, و set them فوق في its own مجلد Nothing إلا على your كمبيوتر changes.
+It isn't on this computer yet. Install Ghidra {version} from its release page, then choose its folder.	It isn't على this كمبيوتر yet. ثبّت Ghidra {version} من its release صفحة ثم اختر its مجلد
+It's already open.	It's already افتح
+It's already open. Right-click it to open another copy.	It's already افتح Right-click it إلى افتح another انسخ
+It's done	It's تم
+It's mine, or I'm allowed to look	It's mine, أو I'm allowed إلى look
+Its copy is deleted, with anything it saved there. The project itself stays as it is.	Its انسخ is deleted, مع anything it saved هناك  مشروع itself stays كما it is.
+Its folder is deleted with everything in it: what was built, the checks and the conversation.	Its مجلد is deleted مع everything في it: ماذا was built,  checks و  conversation.
+Its own code	Its own كود
+Its own sign-in, settings and conversations: another folder is another account. Empty: its usual folder.	Its own sign-in, إعدادات و conversations: another مجلد is another حساب فارغ its usual مجلد
+Java archive overview	ملف Java أرشف overview
+Java class	ملف Java فئة
+Java method bytecode and pseudo-Java	ملف Java طريقة رمز بايت و pseudo-Java
+Java program code (one class)	ملف Java برنامج كود (one فئة
+Java programs	ملف Java برامج
+Java runtime	ملف Java runtime
+Jobs	Jobs
+Jobs ({n_jobs})	Jobs ({n_jobs})
+Jobs ({n})	Jobs ({n})
+Just a question: nothing was changed. Answered by	Just  question: nothing was changed. Answered بواسطة
+Just ask	Just ask
+Just look inside	Just look داخل
+Keep going without asking	Keep going without asking
+Keep it	Keep it
+Keep it in the sidebar to open any time, whatever later builds change.	Keep it في  sidebar إلى افتح any وقت whatever في وقت لاحق builds change.
+Keep the build as it is and stop offering to carry on.	Keep  ابنِ كما it is و أوقف offering إلى carry على
+Keep this version in the sidebar to open any time.	Keep this version في  sidebar إلى افتح any وقت
+Keeps this version exactly as it is now. Later builds can't change or break it, and anything it saves stays with the copy.	Keeps this version exactly كما it is الآن في وقت لاحق builds can't change أو break it, و anything it saves stays مع  انسخ
+Key saved	مفتاح saved
+Keyed archive	Keyed أرشف
+Kind	Kind
+Language	Language
+Last: {what}	Last: {what}
+Launch an app	Launch  تطبيق
+Leave a few GB for the rest of your computer.	Leave  قليل GB ل  rest من your كمبيوتر
+Leave a path empty to use the managed install. We never need environment variables.	Leave  مسار فارغ إلى use  managed ثبّت We never need environment variables.
+Leave empty to use the one Craft Anything sets up.	Leave فارغ إلى use  one Craft Anything sets فوق
+Let a project generate assets	Let  مشروع generate assets
+Let's go	Let's go
+Lets the builder make realistic 3D models and textures for games, {model} a model, with a {budget} budget per project.	Lets  builder make realistic 3D models و textures ل games, {model}  model, مع  {budget} budget per مشروع
+Library resolution	مكتبة resolution
+Light copy: shares big files with the project	Light انسخ shares كبير ملفات مع  مشروع
+Likeness	Likeness
+Line up code and behaviour	Line فوق كود و behaviour
+Line up source with the bundle	Line فوق المصدر مع  bundle
+List Electron pages	List Electron pages
+List JEB units	List JEB units
+List JS runtime targets	List ملف JavaScript runtime targets
+List a Unity assets file	List  Unity assets ملف
+List a Unity bundle	List  Unity bundle
+List a game's archives	List  game's archives
+List a node's event listeners	List  node's event listeners
+List an AI's models	List  AI's models
+List an Unreal IoStore container	List  Unreal IoStore container
+List an Unreal pak	List  Unreal pak
+List an agent's models	List  agent's models
+List bookmarks	List bookmarks
+List browser pages	List متصفح pages
+List documents	List documents
+List engines	List engines
+List functions	List functions
+List names	List أسماء
+List open targets	List افتح targets
+List pinned builds	List pinned builds
+List plugins	List plugins
+List project files	List مشروع ملفات
+List projects	List مشاريع
+List questions about a build	List questions حول  ابنِ
+List radio decoders	List radio decoders
+List segments	List segments
+List shared Cutter sessions	List shared Cutter sessions
+List strings	List strings
+Live: the project's latest build	Live:  project's latest ابنِ
+Load a picture	Load  صورة
+Load a screenshot	Load  screenshot
+Load model options	Load model خيارات
+Loading…	Loading…
+Log	Log
+Look again	Look again
+Look at a game	Look عند  game
+Look at a website	Look عند  موقع إلكتروني
+Look at the game	Look عند  game
+Look for AI on this computer	Look ل AI على this كمبيوتر
+Look for game engines	Look ل game engines
+Look for projects again	Look ل مشاريع again
+Looked at everything	Looked عند everything
+Looked at part of it	Looked عند part من it
+Looked at {a} of {b}	Looked عند {a} من {b}
+Looking for AI on this computer…	Looking ل AI على this computer…
+Looking for game engines on this computer…	Looking ل game engines على this computer…
+Looking for the game's files…	Looking ل  game's files…
+Looking inside needs Deep mode	Looking داخل needs Deep mode
+Looking inside software you own or are allowed to examine is normal and often protected (learning, compatibility, security). Saying why helps you keep to it; it stays on this computer.	Looking داخل software you own أو are allowed إلى examine is normal و often protected (learning, compatibility, security). Saying لماذا helps you keep إلى it; it stays على this كمبيوتر
+Looking on this computer…	Looking على this computer…
+Low	Low
+Mach-O structure	Mach-O structure
+Made a copy: {name}	Made  انسخ {name}
+Made with fal.ai and paid from your account: {model} a 3D model, {picture} a picture. Off, the game is built without them.	Made مع fal.ai و paid من your حساب {model}  3D model, {picture}  صورة Off,  game is built without them.
+Made with {engine}	Made مع {engine}
+Made without looking inside the original.	Made without looking داخل  original.
+Make a game that plays like this	Make  game that plays like this
+Make a simpler version of this game	Make  simpler version من this game
+Make my own version	Make my own version
+Make my own version of this app	Make my own version من this تطبيق
+Making my own thing talk to something else.	Making my own thing talk إلى something إلا
+Many source files packed into one big file so an app or web page loads faster.	كثير المصدر ملفات packed into one كبير ملف so  تطبيق أو ويب صفحة loads faster.
+Map a HarmonyOS app	Map  HarmonyOS تطبيق
+Map a page's module graph	Map  page's وحدة graph
+Map an Android app	Map  Android تطبيق
+Map an Apple app	Map  Apple تطبيق
+Markdown	Markdown
+Match functions between two builds	Match functions بين two builds
+Match my pictures	Match my صور
+Match static code to what ran	Match static كود إلى ماذا ran
+Maximise	Maximise
+May I run "{title}"?	May I شغّل "{title}"?
+May I {action}?	May I {action}?
+Measure which code ran	Measure أي كود ran
+Medium	Medium
+Memory for Ghidra	ذاكرة ل Ghidra
+Minimise	Minimise
+Mode	Mode
+Model	Model
+Model default	Model default
+Model options	Model خيارات
+Model: {model}	Model: {model}
+Modules	Modules
+More detail	المزيد detail
+More makes a big program's first look faster.	المزيد makes  كبير program's first look faster.
+More memory makes Ghidra's first look at a big program faster; leave some for the rest of the computer. Used from the next time Ghidra starts.	المزيد ذاكرة makes Ghidra's first look عند  كبير برنامج faster; leave بعض ل  rest من  كمبيوتر Used من  التالي وقت Ghidra starts.
+Name (optional)	اسم (optional)
+Name an address	اسم  عنوان
+Name at address	اسم عند عنوان
+Name many addresses	اسم كثير addresses
+Names the program's author gave to functions or variables that survived in the file.	أسماء  program's author gave إلى functions أو variables that survived في  ملف
+Needs a fal.ai key. Until then the game is built without them.	Needs  fal.ai مفتاح Until ثم  game is built without them.
+Needs you	Needs you
+Network	شبكة
+New	جديد
+New project	جديد مشروع
+New projects go in	جديد مشاريع go في
+Next address	التالي عنوان
+No AI (built-in engines only)	لا AI (built-in engines only)
+No AI brain is set up, so answers come straight from the built-in engines. Add one any time for plain-words explanations.	لا AI brain is set فوق so answers come straight من  built-in engines. أضف one any وقت ل plain-words explanations.
+No AI for now	لا AI ل الآن
+No AI is set up yet. The built-in engines still work; an AI adds plain-words answers.	لا AI is set فوق yet.  built-in engines still work;  AI adds plain-words answers.
+No Unreal or Unity archives were found. Pick the folder the game is installed in.	لا Unreal أو Unity archives were found. اختر  مجلد  game is installed في
+No chat models are visible in {agent}. Check its setup, then reload.	لا chat models are visible في {agent}. Check its setup, ثم أعد التحميل
+No coding agent was found on this computer yet.	لا coding agent was found على this كمبيوتر yet.
+No evidence yet	لا evidence yet
+No game files here	لا game ملفات هنا
+No jobs yet. Long tasks show their progress here, and you can cancel them.	لا jobs yet. Long tasks أظهر their progress هنا و you can cancel them.
+No matches	لا matches
+No open questions	لا افتح questions
+No plugins yet.	لا plugins yet.
+No result yet	لا result yet
+No targets	لا targets
+No tool named {tool}	لا أداة named {tool}
+None	لا شيء
+None yet. Screenshots help it look right.	لا شيء yet. Screenshots مساعدة it look يمين
+Not allowed	Not allowed
+Not allowed.	Not allowed.
+Not available yet	Not متوفر yet
+Not compared yet: {what}	Not compared yet: {what}
+Not installed	Not installed
+Not now	Not الآن
+Nothing allowed yet.	Nothing allowed yet.
+Nothing can build yet: install Claude Code (and sign in to it once), or add an AI with an API key below.	Nothing can ابنِ yet: ثبّت Claude كود و sign في إلى it once), أو أضف  AI مع  واجهة برمجة تطبيقات مفتاح أسفل
+Nothing found	Nothing found
+Nothing found yet. We look for API keys, local model servers (Ollama, LM Studio) and agent apps you already have. One on another port or computer can be added by its address below.	Nothing found yet. We look ل واجهة برمجة تطبيقات مفاتيح local model servers (Ollama, LM Studio) و agent تطبيقات you already have. One على another منفذ أو كمبيوتر can be added بواسطة its عنوان أسفل
+Nothing inside it is read.	Nothing داخل it is read.
+Nothing inside it is read; Craft Anything works from what you can see. Your version gets its own art.	Nothing داخل it is read; Craft Anything works من ماذا you can see. Your version gets its own art.
+Nothing inside the original is read: not its code, files or page source. Craft Anything works from what you can see: pictures, the page as a visitor sees it, and watching it run.	Nothing داخل  original is read: not its كود ملفات أو صفحة المصدر Craft Anything works من ماذا you can see: صور  صفحة كما  visitor sees it, و watching it شغّل
+Nothing made yet. What you make shows up here.	Nothing made yet. ماذا you make shows فوق هنا
+Nothing matches the filter.	Nothing matches  صّفّ
+Nothing matches.	Nothing matches.
+Nothing new for {time}. Long steps can be quiet; if it stays like this, press Pause.	Nothing جديد ل {time}. Long steps can be quiet; إذا it stays like this, press أوقف مؤقتًا
+Nothing of this kind was found.	Nothing من this kind was found.
+Nothing open	Nothing افتح
+Nothing open yet	Nothing افتح yet
+Nothing selected	Nothing selected
+Nothing to show	Nothing إلى أظهر
+Nothing uses it until it's on again; it keeps its key.	Nothing uses it until it's على again; it keeps its مفتاح
+Nothing — start fresh	Nothing — ابدأ fresh
+Now	الآن
+Now: {what} ({time})	الآن {what} ({time})
+Objective-C classes	Objective-C classes
+Objective-C protocols	Objective-C protocols
+Observe a JS runtime	Observe  ملف JavaScript runtime
+Of this, {cost} was charged to an API key.	من this, {cost} was charged إلى  واجهة برمجة تطبيقات مفتاح
+Off	Off
+Ollama or LM Studio on another computer, or any service that speaks the OpenAI API.	Ollama أو LM Studio على another كمبيوتر أو any خدمة that speaks  OpenAI واجهة برمجة تطبيقات
+On	على
+One line, in plain words. It stays on this computer and is never sent anywhere.	One line, في plain words. It stays على this كمبيوتر و is never sent anywhere.
+One-shot instrumentation	One-shot instrumentation
+Only for Ghidra. Empty = managed.	Only ل Ghidra. فارغ = managed.
+Only its name changes; its folder stays where it is.	Only its اسم changes; its مجلد stays أين it is.
+Only take pictures out of games you made, or whose owner allows it. A game's art is usually protected by copyright and by the game's licence.	Only take صور out من games you made, أو لمن owner allows it.  game's art is usually protected بواسطة copyright و بواسطة  game's licence.
+Only the pin goes; the project and its app stay as they are.	Only  pin goes;  مشروع و its تطبيق stay كما they are.
+Open	افتح
+Open "Show me the proof" to see the exact code we found, and how sure we are.	افتح أظهر me  proof" إلى see  exact كود we found, و كيف sure we are.
+Open Ghidra's release page	افتح Ghidra's release صفحة
+Open Unity Hub	افتح Unity Hub
+Open a calculator app and find the code behind one button.	افتح  calculator تطبيق و ابحث  كود behind one زر
+Open a file in JEB	افتح  ملف في JEB
+Open a file or drop one here.	افتح  ملف أو drop one هنا
+Open a file…	افتح  file…
+Open a folder or app bundle	افتح  مجلد أو تطبيق bundle
+Open a folder or app bundle…	افتح  مجلد أو تطبيق bundle…
+Open a folder…	افتح  folder…
+Open a pinned build	افتح  pinned ابنِ
+Open a project's folder	افتح  project's مجلد
+Open a website	افتح  موقع إلكتروني
+Open an app or file	افتح  تطبيق أو ملف
+Open an engine's app	افتح  engine's تطبيق
+Open another copy	افتح another انسخ
+Open another target	افتح another target
+Open files, folders or apps; you can have several open at once.	افتح ملفات مجلدات أو تطبيقات you can have several افتح عند once.
+Open folder	افتح مجلد
+Open in the workbench	افتح في  workbench
+Open it	افتح it
+Open log	افتح log
+Open one of the files inside it to see its bytes.	افتح one من  ملفات داخل it إلى see its بايتات
+Open questions	افتح questions
+Open something	افتح something
+Open something first: drop a file or app here, or choose "Just look inside" on New project. Then I can look inside it.	افتح something first: drop  ملف أو تطبيق هنا أو اختر "Just look داخل على جديد مشروع ثم I can look داخل it.
+Open something to start	افتح something إلى ابدأ
+Open the Epic Games Launcher	افتح  Epic Games Launcher
+Open the app	افتح  تطبيق
+Open the app you're curious about.	افتح  تطبيق you're curious حول
+Open the download page	افتح  نزّل صفحة
+Open the folder	افتح  مجلد
+Open the installer app	افتح  installer تطبيق
+Open the website	افتح  موقع إلكتروني
+Open {name}	افتح {name}
+OpenCode default	OpenCode default
+OpenCode has no visible chat models. Connect a provider in OpenCode, then reload.	OpenCode has لا visible chat models. اتصل  provider في OpenCode, ثم أعد التحميل
+OpenCode model	OpenCode model
+Opened {name}	Opened {name}
+Opened {name}. Taking a first look…	Opened {name}. Taking  first look…
+Opened {}	Opened {}
+Opening {name}…	Opening {name}…
+Open…	Open…
+Or type your answer…	أو نوع your answer…
+Original	Original
+Other pages of a website studied and compared besides the one you gave.	Other pages من  موقع إلكتروني studied و compared besides  one you gave.
+Overview	Overview
+Packet capture overview	Packet capture overview
+Packet fields	Packet fields
+Page through evidence	صفحة through evidence
+Part of the app got stuck, so it was stopped and the rest carried on. Your work is kept.	Part من  تطبيق got stuck, so it was stopped و  rest carried على Your work is kept.
+Part of the app is stuck. Restarting clears it, and your work is kept.	Part من  تطبيق is stuck. Restarting clears it, و your work is kept.
+Part of this screen hit a bug and was skipped. Your work is safe.	Part من this شاشة hit  bug و was skipped. Your work is safe.
+Paste pictures	الصق صور
+Paste your API key (kept in your system keychain)	الصق your واجهة برمجة تطبيقات مفتاح (kept في your system keychain)
+Paste your {name} key	الصق your {name} مفتاح
+Path	مسار
+Pause	أوقف مؤقتًا
+Pause the build first, then delete the project.	أوقف مؤقتًا  ابنِ first, ثم احذف  مشروع
+Pause the build first.	أوقف مؤقتًا  ابنِ first.
+Paused	Paused
+Paused.	Paused.
+Pausing…	Pausing…
+Pick a folder with projects in it	اختر  مجلد مع مشاريع في it
+Pick a game's folder	اختر  game's مجلد
+Pick another folder…	اختر another folder…
+Pick another game	اختر another game
+Pick its folder, say what you want, then press Start.	اختر its مجلد say ماذا you want, ثم press ابدأ
+Pick something on the left	اختر something على  يسار
+Pick the app or game folder	اختر  تطبيق أو game مجلد
+Pick the app, game or file to rebuild	اختر  تطبيق game أو ملف إلى rebuild
+Pick the folder for this project	اختر  مجلد ل this مشروع
+Pick the game's folder	اختر  game's مجلد
+Pick your project's folder	اختر your project's مجلد
+Pick your project's folder first.	اختر your project's مجلد first.
+Picture a program's window	صورة  program's نافذة
+Picture model	صورة model
+Pictures	صور
+Pictures can't be saved from IoStore containers yet; you can see what's inside.	صور can't be saved من IoStore containers yet; you can see what's داخل
+Pictures of the original	صور من  original
+Pieces of text stored inside a program, like messages, web addresses or file names.	Pieces من نص stored داخل  برنامج like رسائل ويب addresses أو ملف أسماء
+Pin a build	Pin  ابنِ
+Pin a project's build	Pin  project's ابنِ
+Pin it	Pin it
+Pin name	Pin اسم
+Pin removed.	Pin removed.
+Pin this build	Pin this ابنِ
+Pinned	Pinned
+Pinned builds	Pinned builds
+Pinned: {name}. Open it from the sidebar any time.	Pinned: {name}. افتح it من  sidebar any وقت
+Plain words, big buttons, and I'll explain everything.	Plain words, كبير buttons, و I'll explain everything.
+Plain words, short sentences, and every technical word explained.	Plain words, short sentences, و every technical word explained.
+Plan	Plan
+Plan connecting agent apps	Plan connecting agent تطبيقات
+Play a project's result	Play  project's result
+Play the game	Play  game
+Plugin added. Read its tools to start using them.	Plugin added. Read its أدوات إلى ابدأ using them.
+Plugin arguments	Plugin arguments
+Plugin command or address	Plugin command أو عنوان
+Plugin id	Plugin id
+Plugin removed.	Plugin removed.
+Plugins	Plugins
+Plugins add tools Craft Anything offers as its own: MCP servers (a command or an address; read their tools after adding) or WebAssembly components (a .wasm file, which can't touch your files or the network).	Plugins أضف أدوات Craft Anything offers كما its own: MCP servers  command أو  عنوان read their أدوات after adding) أو WebAssembly components  وحدة WebAssembly ملف أي can't touch your ملفات أو  شبكة
+Plugins added here always ask before each call.	Plugins added هنا always ask before each call.
+Plugins read. Their new tools are offered from the next start.	Plugins read. Their جديد أدوات are offered من  التالي ابدأ
+Preserving software that's no longer supported.	Preserving software that's لا longer supported.
+Preview a project's website	معاينة  project's موقع إلكتروني
+Preview the website	معاينة  موقع إلكتروني
+Previous address	Previous عنوان
+Program: found automatically	برنامج found automatically
+Program: {path}	برنامج {path}
+Programs (native code)	برامج (native كود
+Progress	Progress
+Project details	مشروع details
+Project name	مشروع اسم
+Projects	مشاريع
+Projects and builds	مشاريع و builds
+Property list	خاصية list
+Providers	Providers
+Pseudo-C	Pseudo-C
+Purpose	Purpose
+Raise the asset budget	Raise  asset budget
+Raise the budget by {amount}	Raise  budget بواسطة {amount}
+Raw machine code	Raw آلة كود
+Read AI settings	Read AI إعدادات
+Read a Unity game's IL2CPP metadata	Read  Unity game's IL2CPP metadata
+Read a game's files	Read  game's ملفات
+Read a project file	Read  مشروع ملف
+Read a setting	Read  إعداد
+Read an app's screen	Read  app's شاشة
+Read bytes	Read بايتات
+Read comment	Read علّق
+Read inline comment	Read inline علّق
+Read its tools	Read its أدوات
+Read pinned builds	Read pinned builds
+Read projects	Read مشاريع
+Read the journal	Read  journal
+Read the plugin's tools	Read  plugin's أدوات
+Read the project	Read  مشروع
+Reading what's inside…	Reading what's inside…
+Ready	جاهز
+Ready: {what} is on this computer.	جاهز {what} is على this كمبيوتر
+Reasoning	Reasoning
+Rebuild status	Rebuild status
+Record a finding	Record  finding
+Record a hypothesis	Record  hypothesis
+Record an open question	Record  افتح question
+Recover readable sources	Recover readable sources
+Recreate it with darker colours	Recreate it مع darker colours
+Recreate just its main feature	Recreate just its main feature
+Recreate this website	Recreate this موقع إلكتروني
+Recreated games are built with the original's own engine when it's here (Unity, Unreal or Godot), else Unity, and Rust as the last resort.	Recreated games are built مع  original's own engine متى it's هنا (Unity, Unreal أو Godot), إلا Unity, و Rust كما  last resort.
+References to a name	References إلى  اسم
+Refining rounds	Refining rounds
+Refresh plugins	حدّث plugins
+Regions of a program file, each with one purpose: code, text, pictures, settings.	Regions من  برنامج ملف each مع one purpose: كود نص صور إعدادات
+Reload	أعد التحميل
+Reload models	أعد التحميل models
+Remember permission	Remember permission
+Remote program	Remote برنامج
+Remove	أزل
+Remove a pin	أزل  pin
+Remove a pinned build	أزل  pinned ابنِ
+Remove a plugin	أزل  plugin
+Remove an AI	أزل  AI
+Remove an app	أزل  تطبيق
+Remove an asset key	أزل  asset مفتاح
+Remove bookmark	أزل bookmark
+Remove it	أزل it
+Remove it and its key	أزل it و its مفتاح
+Remove {name}	أزل {name}
+Remove {name}?	أزل {name}?
+Remove…	Remove…
+Rename	Rename
+Rename a pinned build	Rename  pinned ابنِ
+Rename a project	Rename  مشروع
+Rename the pin	Rename  pin
+Rename the project	Rename  مشروع
+Rename…	Rename…
+Reset	أعد تعيين
+Resolve a call	Resolve  call
+Resolved	Resolved
+Resources	Resources
+Restart	أعد التشغيل
+Restore	استعد
+Result	Result
+Resume a Frida session	Resume  Frida session
+Rizin command	Rizin command
+Rizin debug command	Rizin تصحيح أخطاء command
+Rizin debug session status	Rizin تصحيح أخطاء session status
+Rough guide:	Rough guide:
+Run	شغّل
+Run Engine/Build/BatchFiles/Linux/SetupToolchain.sh in the engine folder to install its bundled Clang toolchain. If you built Unreal from source, Setup.sh downloads the native toolchain instead. A system Clang may not match the engine's version.	شغّل Engine/Build/BatchFiles/Linux/SetupToolchain.sh في  engine مجلد إلى ثبّت its bundled Clang toolchain. إذا you built Unreal من المصدر Setup.sh downloads  native toolchain instead.  system Clang may not match  engine's version.
+Run a Frida script	شغّل  Frida نص برمجي
+Run a build command	شغّل  ابنِ command
+Run a scripted Electron session	شغّل  scripted Electron session
+Run a scripted web session	شغّل  scripted ويب session
+Run a tool from the command palette (Ctrl/⌘ K), or pick a finding in the Evidence panel.	شغّل  أداة من  command palette (Ctrl/⌘ K), أو اختر  finding في  Evidence panel.
+Run and watch a program	شغّل و watch  برنامج
+Run to study	شغّل إلى study
+Running	Running
+Running processes	Running processes
+Running programs	Running برامج
+Running {id}	Running {id}
+Runs its tools without asking	Runs its أدوات without asking
+Runs the first-run steps next time.	Runs  first-run steps التالي وقت
+Rust program details	Rust برنامج details
+SHA-256	SHA-256
+SQLite database contents	قاعدة بيانات SQLite قاعدة بيانات contents
+Safety	Safety
+Save	احفظ
+Save a picture	احفظ  صورة
+Save a report	احفظ  report
+Save an asset key	احفظ  asset مفتاح
+Save picture	احفظ صورة
+Save settings	احفظ إعدادات
+Save the key	احفظ  مفتاح
+Save the picture	احفظ  صورة
+Save the report	احفظ  report
+Saved	Saved
+Saved in	Saved في
+Saves space: copies the program and code, and shares dependencies and media with the project. A shared file rewritten in place changes here too.	Saves space: copies  برنامج و كود و shares dependencies و media مع  مشروع  shared ملف rewritten في place changes هنا too.
+Say what you want	Say ماذا you want
+Say what you want first.	Say ماذا you want first.
+Say what you want to make, or drop an app or file on the window to look inside it. Everything runs in Clean room mode unless you switch on Deep.	Say ماذا you want إلى make, أو drop  تطبيق أو ملف على  نافذة إلى look داخل it. Everything runs في نظّف room mode unless you switch على Deep.
+Screenshot	Screenshot
+Screenshot a page	Screenshot  صفحة
+Screenshots of how it should look. The builder opens each one and matches it.	Screenshots من كيف it should look.  builder opens each one و matches it.
+Search for bytes	ابحث ل بايتات
+Search functions	ابحث functions
+Search strings	ابحث strings
+Sections	Sections
+Security research on software I'm allowed to examine.	Security research على software I'm allowed إلى examine.
+See how a page is built: its layout, styles, scripts and the requests it makes.	See كيف  صفحة is built: its layout, styles, scripts و  requests it makes.
+See how a program works: what it does, what it talks to, what's inside.	See كيف  برنامج works: ماذا it does, ماذا it talks إلى what's داخل
+See what a game packs and save its pictures as PNG files. Only for games you made, or whose owner lets you.	See ماذا  game packs و احفظ its صور كما PNG ملفات Only ل games you made, أو لمن owner lets you.
+See what a game packs, and save its pictures as PNG files.	See ماذا  game packs, و احفظ its صور كما PNG ملفات
+See what a stand-in was asked	See ماذا  stand-in was asked
+See which servers an app talks to, and what it says.	See أي servers  تطبيق talks إلى و ماذا it says.
+Seen it	Seen it
+Seen it: read directly from the file, page or capture.	Seen it: read directly من  ملف صفحة أو capture.
+Selected	Selected
+Selection	Selection
+Send	أرسل
+Send (Enter)	أرسل (Enter)
+Send now	أرسل الآن
+Server address	خادم عنوان
+Session status	Session status
+Set a project's asset budget	Set  project's asset budget
+Set an AI's folder	Set  AI's مجلد
+Set an AI's program	Set  AI's برنامج
+Set model options	Set model خيارات
+Set one up	Set one فوق
+Set up a brain…	Set فوق  brain…
+Set up a builder	Set فوق  builder
+Settings	إعدادات
+Show a build's activity	أظهر  build's activity
+Show a project	أظهر  مشروع
+Show folder	أظهر مجلد
+Show me everything	أظهر me everything
+Show me the proof	أظهر me  proof
+Show model options	أظهر model خيارات
+Show pinned builds	أظهر pinned builds
+Show settings	أظهر إعدادات
+Show the answer	أظهر  answer
+Show the console	أظهر  console
+Show the folder	أظهر  مجلد
+Show the ones that are met	أظهر  ones that are met
+Show the sidebar	أظهر  sidebar
+Show the welcome again	أظهر  welcome again
+Showing	Showing
+Sign in and add the Unity Editor	Sign في و أضف  Unity Editor
+Sign in and install Unreal Engine	Sign في و ثبّت Unreal Engine
+Simple	بسيط
+Simple: say what you want and it's handled for you. Advanced: every tool, the evidence and the logs.	بسيط say ماذا you want و it's handled ل you. Advanced: every أداة  evidence و  logs.
+Since Craft Anything opened.	Since Craft Anything opened.
+Size	حجم
+Skip setup	تجاوز setup
+Smart contract interface	Smart contract واجهة
+Software I made, bought, or have permission to examine.	Software I made, bought, أو have permission إلى examine.
+Solana program (sBPF)	Solana برنامج (sBPF)
+Some plugins couldn't be read:	بعض plugins couldn't be read:
+Something a program borrows from the operating system or a library, like "open a file".	Something  برنامج borrows من  operating system أو  مكتبة like افتح  ملف
+Something a program or library offers for other programs to use.	Something  برنامج أو مكتبة offers ل other برامج إلى use.
+Source	المصدر
+Standard	Standard
+Start	ابدأ
+Start a Frida session	ابدأ  Frida session
+Start a GDB session	ابدأ  GDB session
+Start a Rizin debug session	ابدأ  Rizin تصحيح أخطاء session
+Start a rebuild	ابدأ  rebuild
+Start a stand-in backend	ابدأ  stand-in backend
+Start an activity	ابدأ  activity
+Start building	ابدأ building
+Start from them	ابدأ من them
+Start it	ابدأ it
+Start with Simple mode; you can set up AI later in Settings.	ابدأ مع بسيط mode; you can set فوق AI في وقت لاحق في إعدادات
+Starting…	Starting…
+Starting… it opens in its own window.	Starting… it opens في its own نافذة
+Still working. Bigger jobs can take a few minutes.	Still working. Bigger jobs can take  قليل minutes.
+Stop	أوقف
+Stop a pinned build	أوقف  pinned ابنِ
+Stop a rebuild	أوقف  rebuild
+Stop a stand-in backend	أوقف  stand-in backend
+Stop generated assets	أوقف generated assets
+Stop listing {folder}	أوقف listing {folder}
+Stopped here	Stopped هنا
+Stops the current step and sends your notes straight away.	Stops  current step و sends your notes straight away.
+Strings	Strings
+Studio	Studio
+Studio (dark)	Studio (dark)
+Studio Light	Studio Light
+Study	Study
+Study apps by running them	Study تطبيقات بواسطة running them
+Studying	Studying
+Studying software to understand it.	Studying software إلى understand it.
+Summarise what changed	Summarise ماذا changed
+Swift types	Swift types
+Switch Beginner / Experienced	Switch Beginner / Experienced
+Switch Clean room / Deep	Switch نظّف room / Deep
+Switch light / dark theme	Switch light / dark theme
+Switch target	Switch target
+System	System
+System services	System services
+Take a texture out of an Unreal game	Take  texture out من  Unreal game
+Take an asset out of a Unity game	Take  asset out من  Unity game
+Take back a note	Take الخلف  دونة
+Take back: puts it in the box again	Take الخلف puts it في  box again
+Take files out of an Unreal pak	Take ملفات out من  Unreal pak
+Take out packed files	Take out packed ملفات
+Target	Target
+Targets	Targets
+That folder already has {names}, where Craft Anything keeps its own files. Pick another folder, or move those out first.	That مجلد already has {names}, أين Craft Anything keeps its own ملفات اختر another مجلد أو move those out first.
+That folder is already a project, so it's open now.	That مجلد is already  مشروع so it's افتح الآن
+That folder is empty. Pick the folder your project's files are in.	That مجلد is فارغ اختر  مجلد your project's ملفات are في
+The Claude desktop app is installed, but building needs Claude Code, its separate command-line tool. Install Claude Code, sign in to it once in a terminal, then look again.	 Claude سطح مكتب تطبيق is installed, لكن building needs Claude كود its separate command-line أداة ثبّت Claude كود sign في إلى it once في  terminal, ثم look again.
+The Rust toolchain (rustup.rs).	 Rust toolchain (rustup.rs).
+The builder answers its own questions and says what it chose ("I decided: …"), so you can change it.	 builder answers its own questions و says ماذا it chose ("I decided: …"), so you can change it.
+The builder makes the game's 3D models and textures from descriptions of original designs, paid from your fal.ai account. Models are low-poly so the game runs fast. A textured model costs {model} and a picture {picture}. Each project has a {budget} budget, and you're asked before it goes over. The key is kept in your system keychain.	 builder makes  game's 3D models و textures من descriptions من original designs, paid من your fal.ai حساب Models are low-poly so  game runs سريع  textured model costs {model} و  صورة {picture}. Each مشروع has  {budget} budget, و you're asked before it goes فوق  مفتاح is kept في your system keychain.
+The builder reads them (code, notes, pictures) and builds the app in a new app folder beside them. Your files stay as they are.	 builder reads them كود notes, صور و builds  تطبيق في  جديد تطبيق مجلد beside them. Your ملفات stay كما they are.
+The builder will decide its questions and tell you what it chose.	 builder will decide its questions و tell you ماذا it chose.
+The builder works on these files directly and keeps what works. Craft Anything adds a few records of its own beside them.	 builder works على these ملفات directly و keeps ماذا works. Craft Anything adds  قليل records من its own beside them.
+The builder's questions	 builder's questions
+The builder's questions come to you as cards, and it waits for your answer.	 builder's questions come إلى you كما cards, و it waits ل your answer.
+The builder's questions will come to you.	 builder's questions will come إلى you.
+The built-in engines still show you everything they find.	 built-in engines still أظهر you everything they ابحث
+The clipboard can't be read:	 clipboard can't be read:
+The code	 كود
+The code format Android apps use.	 كود format Android تطبيقات use.
+The coding agent's estimate at API prices, not your bill. A subscription isn't charged this.	 coding agent's estimate عند واجهة برمجة تطبيقات prices, not your bill.  subscription isn't charged this.
+The download keeps going in the background.	 نزّل keeps going في  background.
+The first instruction a program runs when it starts.	 first instruction  برنامج runs متى it starts.
+The full toolset, evidence and logs.	 ممتلئ toolset, evidence و logs.
+The installer is open. Follow its steps, then come back here.	 installer is افتح Follow its steps, ثم come الخلف هنا
+The lowest-level human-readable form of machine code: one small instruction per line.	 lowest-level human-readable form من آلة كود one صغير instruction per line.
+The names were removed from the program before it was shipped, so we have to work them out.	 أسماء were removed من  برنامج before it was shipped, so we have إلى work them out.
+The packed contents of an Electron app (a website inside a desktop app)	 packed contents من  Electron تطبيق  موقع إلكتروني داخل  سطح مكتب تطبيق
+The pasted picture wasn't attached: another screen was opened meanwhile.	 pasted صورة wasn't attached: another شاشة was opened meanwhile.
+The picture on the clipboard is too large.	 صورة على  clipboard is too كبير
+The program's machine code written out as one tiny instruction per line.	 program's آلة كود written out كما one tiny instruction per line.
+The project's name and round	 project's اسم و round
+The raw result	 raw result
+The saved model is no longer visible. Choose another model or the OpenCode default.	 saved model is لا longer visible. اختر another model أو  OpenCode default.
+The saved model is no longer visible. Choose another model or the {agent} default.	 saved model is لا longer visible. اختر another model أو  {agent} default.
+The saved thinking depth is unavailable for this model. Choose its default or an offered depth.	 saved thinking depth is غير متوفر ل this model. اختر its default أو  offered depth.
+The smallest unit of data in a file: a number from 0 to 255.	 smallest unit من بيانات في  ملف  رقم من 0 إلى 255.
+The smallest units of data in a file: numbers from 0 to 255.	 smallest units من بيانات في  ملف أرقام من 0 إلى 255.
+The {name} view isn't available yet in this build.	 {name} عرض isn't متوفر yet في this ابنِ
+The {} view isn't available yet in this build.	 {} عرض isn't متوفر yet في this ابنِ
+Theme	Theme
+There's no /{name} command. You can use {commands}.	There's لا /{name} command. You can use {commands}.
+There's no AI brain set up yet, so here's what the built-in engines found:	There's لا AI brain set فوق yet, so here's ماذا  built-in engines found:
+There's no picture on the clipboard to paste.	There's لا صورة على  clipboard إلى الصق
+They're my app: edit them in place	They're my تطبيق حرر them في place
+Things a program borrows from the operating system or libraries, like "open a file" or "draw a window".	Things  برنامج borrows من  operating system أو libraries, like افتح  ملف أو "draw  نافذة
+Things a program or library offers for other programs to use.	Things  برنامج أو مكتبة offers ل other برامج إلى use.
+Things we couldn't establish yet are listed here, with what would settle them.	Things we couldn't establish yet are listed هنا مع ماذا would settle them.
+Thinking depth	Thinking depth
+This answer won't be there after a restart:	This answer won't be هناك after  أعد التشغيل
+This build stopped part-way	This ابنِ stopped part-way
+This can't be undone.	This can't be undone.
+This folder already has files	This مجلد already has ملفات
+This is a big one. You can leave this open and come back later.	This is  كبير one. You can leave this افتح و come الخلف في وقت لاحق
+This is outside what the builder may do on its own. Nothing happens until you say so.	This is خارجي ماذا  builder may do على its own. Nothing happens until you say so.
+This keeps going in the background, and each download is checked against its publisher's checksum before it's used.	This keeps going في  background, و each نزّل is checked against its publisher's checksum before it's used.
+This project is waiting its turn. Send your message once it starts.	This مشروع is waiting its turn. أرسل your رسالة once it starts.
+This runs code from the target or changes a device. Clicking Run is your OK.	This runs كود من  target أو changes  device. Clicking شغّل is your OK.
+This runs code from the target or changes a device. Nothing runs until you say so.	This runs كود من  target أو changes  device. Nothing runs until you say so.
+This tool takes no settings.	This أداة takes لا إعدادات
+This updates by itself when it's done.	This updates بواسطة itself متى it's تم
+This view arrives with the next engines. The Hex and Result views work today.	This عرض arrives مع  التالي engines.  Hex و Result views work اليوم
+Those aren't pictures we can use (PNG, JPEG, WebP or GIF, up to 20 MB).	Those aren't صور we can use (PNG, JPEG, WebP أو GIF, فوق إلى 20 MB).
+Time spent	وقت spent
+Tip: press Ctrl/⌘ K to run any tool.	Tip: press Ctrl/⌘ K إلى شغّل any أداة
+Tokens	Tokens
+Tools may now run code from what you open without asking. Turn this back on unless you're sure.	أدوات may الآن شغّل كود من ماذا you افتح without asking. Turn this الخلف على unless you're sure.
+Tools that run code from a target or change a phone always ask first, unless you allowed them for a project.	أدوات that شغّل كود من  target أو change  phone always ask first, unless you allowed them ل  مشروع
+Trace a UI action	Trace  UI action
+Trace a feature	Trace  feature
+Try again	Try again
+Try asking	Try asking
+Try it out, then ask below for any changes.	Try it out, ثم ask أسفل ل any changes.
+Turn a program's machine code back into something that reads like source code. It's a reconstruction, not the original.	Turn  program's آلة كود الخلف into something that reads like المصدر كود It's  reconstruction, not  original.
+Turn off	Turn off
+Turn off an AI	Turn off  AI
+Turn on	Turn على
+Turn on Deep mode	Turn على Deep mode
+Turn on an AI	Turn على  AI
+Turning a plugin on or off takes effect from the next start.	Turning  plugin على أو off takes effect من  التالي ابدأ
+Type a command or tool…	نوع  command أو tool…
+Type the website's address:	نوع  website's عنوان
+Type your question after /btw.	نوع your question after /btw.
+Unity assets	Unity assets
+Unity bundle	Unity bundle
+Unity's own installer. It only opens if Unity's signature checks out.	Unity's own installer. It only opens إذا Unity's signature checks out.
+Unknown	Unknown
+Unknown: we couldn't establish this yet.	Unknown: we couldn't establish this yet.
+Unknowns	Unknowns
+Unload a Frida script	Unload  Frida نص برمجي
+Unreal IoStore	Unreal IoStore
+Unreal builds games with Apple's Xcode, free in the App Store.	Unreal builds games مع Apple's Xcode, free في  تطبيق Store.
+Unreal is here, but it also needs Visual Studio's C++ tools.	Unreal is هنا لكن it also needs Visual Studio's C++ أدوات
+Unreal is here, but it also needs Xcode.	Unreal is هنا لكن it also needs Xcode.
+Unreal is here, but its bundled Clang C++ toolchain wasn't found.	Unreal is هنا لكن its bundled Clang C++ toolchain wasn't found.
+Unreal pak	Unreal pak
+Update a finding	حدّث  finding
+Update a hypothesis	حدّث  hypothesis
+Update an open question	حدّث  افتح question
+Update the checklist	حدّث  checklist
+Update the plan	حدّث  plan
+Use	Use
+Use an API key…	Use  واجهة برمجة تطبيقات key…
+Use as a goal	Use كما  goal
+Use the projects folder	Use  مشاريع مجلد
+Use this	Use this
+Use {name}	Use {name}
+Value flow	قيمة flow
+Version	Version
+Waiting	Waiting
+Waiting for another build to finish: this one starts next.	Waiting ل another ابنِ إلى انهِ this one starts التالي
+Waiting for other builds to finish: {n} in line.	Waiting ل other builds إلى انهِ {n} في line.
+Waiting: the builder reads it at its next step. Up arrow to edit.	Waiting:  builder reads it عند its التالي step. فوق arrow إلى حرر
+Waiting: the builder reads these at its next step. Up arrow to edit the last.	Waiting:  builder reads these عند its التالي step. فوق arrow إلى حرر  last.
+Want answers in plain words?	Want answers في plain words?
+Watch a Mac app's calls	Watch  Mac app's calls
+Watch a page over time	Watch  صفحة فوق وقت
+We didn't find an AI on this computer yet	We didn't ابحث  AI على this كمبيوتر yet
+We list the web addresses and messages we can see inside it. Watching it live needs your OK first.	We list  ويب addresses و رسائل we can see داخل it. Watching it live needs your OK first.
+We only read it; nothing runs. Every answer shows how sure we are.	We only read it; nothing runs. Every answer shows كيف sure we are.
+WebAssembly module	WebAssembly وحدة
+WebAssembly: fast compiled code that runs inside web browsers.	WebAssembly: سريع compiled كود that runs داخل ويب browsers.
+Website address	موقع إلكتروني عنوان
+Website pages	موقع إلكتروني pages
+Websites	Websites
+Welcome	Welcome
+What a new game may spend on generated pictures and 3D models before you're asked. Each project keeps its own.	ماذا  جديد game may spend على generated صور و 3D models before you're asked. Each مشروع keeps its own.
+What a program exports	ماذا  برنامج exports
+What a program imports	ماذا  برنامج imports
+What are its main parts?	ماذا are its main parts?
+What brings you here?	ماذا brings you هنا
+What can Craft Anything do?	ماذا can Craft Anything do?
+What data was sent?	ماذا بيانات was sent?
+What do you want to look inside?	ماذا do you want إلى look داخل
+What do you want to make?	ماذا do you want إلى make?
+What do you want to recreate?	ماذا do you want إلى recreate?
+What does it need from the page?	ماذا does it need من  صفحة
+What does it send over the internet?	ماذا does it أرسل فوق  إنترنت
+What does this app do?	ماذا does this تطبيق do?
+What does this app store?	ماذا does this تطبيق store?
+What does this contract do?	ماذا does this contract do?
+What does this module do?	ماذا does this وحدة do?
+What does this program do?	ماذا does this برنامج do?
+What does {what} do?	ماذا does {what} do?
+What happened in this build	ماذا happened في this ابنِ
+What is it	ماذا is it
+What is this?	ماذا is this?
+What it calls	ماذا it calls
+What kind of file is this?	ماذا kind من ملف is this?
+What permissions does it ask for?	ماذا permissions does it ask ل
+What pictures and textures are made with.	ماذا صور و textures are made مع
+What settings are in here?	ماذا إعدادات are في هنا
+What tables are in here?	ماذا tables are في هنا
+What we couldn't check	ماذا we couldn't check
+What would you like to find out?	ماذا would you like إلى ابحث out?
+What would you like to know about {name}?	ماذا would you like إلى know حول {name}?
+What's at this address	What's عند this عنوان
+What's in this folder?	What's في this مجلد
+What's inside this archive?	What's داخل this أرشف
+Whatever Settings → AI builds with.	Whatever إعدادات → AI builds مع
+When a folder you pick has files	متى  مجلد you اختر has ملفات
+When the builder needs a choice made: show it to you and wait, or let it decide and say what it chose. Each project can choose for itself under its prompt box.	متى  builder needs  choice made: أظهر it إلى you و wait, أو let it decide و say ماذا it chose. Each مشروع can اختر ل itself تحت its prompt box.
+When you rebuild an app or game, start it once to picture its window and compare the rebuild with it. It runs that program.	متى you rebuild  تطبيق أو game, ابدأ it once إلى صورة its نافذة و compare  rebuild مع it. It runs that برنامج
+Where am I	أين am I
+Where is Ghidra installed?	أين is Ghidra installed?
+Where is the program?	أين is  برنامج
+Where is your project?	أين is your مشروع
+Where should new projects go?	أين should جديد مشاريع go?
+Where we found it	أين we found it
+Whether they're the app to edit in place, or material the app starts from beside them.	Whether they're  تطبيق إلى حرر في place, أو material  تطبيق starts من beside them.
+Which AI answers your questions	أي AI answers your questions
+Which file is the main program?	أي ملف is  main برنامج
+Which files does it read or write?	أي ملفات does it read أو write?
+Which function is this in	أي دالة is this في
+Which servers does it talk to?	أي servers does it talk إلى
+Which servers were contacted?	أي servers were contacted?
+Which websites does it load?	أي websites does it load?
+Who builds what you make	من builds ماذا you make
+Who calls it	من calls it
+Who can move funds?	من can move funds?
+Who signed this Windows program	من signed this Windows برنامج
+Who uses this Android class?	من uses this Android فئة
+Who uses this Java class?	من uses this ملف Java فئة
+Why we ask	لماذا we ask
+Window / focus info	نافذة / focus info
+Windows resources	Windows resources
+Wireshark tools check	Wireshark أدوات check
+Without it, Deep mode uses Craft Anything's own decompiler, which is rougher.	Without it, Deep mode uses Craft Anything's own مفكّك التجميع أي is rougher.
+Work on a project you already have	Work على  مشروع you already have
+Work on my project	Work على my مشروع
+Work out a copy's size	Work out  copy's حجم
+Work out what an installed app is built on	Work out ماذا  installed تطبيق is built على
+Workbench	Workbench
+Worked it out	Worked it out
+Worked it out: computed step by step from things we saw.	Worked it out: computed step بواسطة step من things we saw.
+Worked through {n} steps	Worked through {n} steps
+Working on it	Working على it
+Working on your answer	Working على your answer
+Working out how much space a copy takes…	Working out كيف much space  انسخ takes…
+Working…	Working…
+Working… ({n} steps so far)	Working… ({n} steps so بعيد
+Write a project file	Write  مشروع ملف
+Write a readable report	Write  readable report
+Write comment	Write علّق
+Write inline comment	Write inline علّق
+Write pseudo-C to a folder	Write pseudo-C إلى  مجلد
+Write the brief	Write  brief
+Write the handoff	Write  handoff
+Wrote {what} to {}	Wrote {what} إلى {}
+You answered: {a}	You answered: {a}
+You can add a Claude, ChatGPT or OpenRouter key, a local model (Ollama, LM Studio) or an agent you already use, later in Settings → AI.	You can أضف  Claude, ChatGPT أو OpenRouter مفتاح  local model (Ollama, LM Studio) أو  agent you already use, في وقت لاحق في إعدادات → AI.
+You chose:	You chose:
+You're all set	You're الكل set
+Your app is ready	Your تطبيق is جاهز
+Your brains	Your brains
+Your fal.ai key	Your fal.ai مفتاح
+Your game is ready	Your game is جاهز
+Your message wasn't sent: another project was opened while its pictures were copied.	Your رسالة wasn't sent: another مشروع was opened while its صور were copied.
+Your own tool installs (optional)	Your own أداة installs (optional)
+Your project starts as soon as it's done.	Your مشروع starts كما قريبًا كما it's تم
+Your version	Your version
+Your website is ready	Your موقع إلكتروني is جاهز
+a new folder in {dir}	 جديد مجلد في {dir}
+a picture	 صورة
+about ${n}	حول ${n}
+address, e.g. http://192.168.1.20:11434/v1	عنوان e.g. http://192.168.1.20:11434/v1
+and {n} more	و {n} المزيد
+arguments (optional)	arguments (optional)
+call graph	call graph
+clean room	نظّف room
+command, https:// address or .wasm file	command, https:// عنوان أو وحدة WebAssembly ملف
+deep mode	deep mode
+entry point	entry point
+files	ملفات
+findings	findings
+first run	first شغّل
+found on this computer; set up when you start	found على this كمبيوتر set فوق متى you ابدأ
+from the builder's own memory of the build	من  builder's own ذاكرة من  ابنِ
+from the project's files	من  project's ملفات
+id, e.g. docs	id, e.g. docs
+is required	is required
+isn't available yet	isn't متوفر yet
+job result	job result
+job {title} panicked: {what}	job {title} panicked: {what}
+just now	just الآن
+managed	managed
+model (optional)	model (optional)
+must be a number	must be  رقم
+must be a whole number	must be  whole رقم
+name, e.g. Studio box	اسم e.g. Studio box
+number	رقم
+objdump output	objdump output
+or start with /btw to just ask	أو ابدأ مع /btw إلى just ask
+pinned builds couldn't be read: {}	pinned builds couldn't be read: {}
+say how to use the files there	say كيف إلى use  ملفات هناك
+scene	scene
+scenes	scenes
+source map	المصدر map
+start page	ابدأ صفحة
+the app is built beside your files, starting from them	 تطبيق is built beside your ملفات starting من them
+the built-in engines	 built-in engines
+the prompt box changed height	 prompt box changed ارتفاع
+title bar	عنوان bar
+under $0.01	تحت $0.01
+yesterday	الأمس
+your files there are the app, edited in place	your ملفات هناك are  تطبيق edited في place
+{:.1} GB	{:.1} GB
+{:.1}M	{:.1}M
+{backend}: {input_tokens} in / {output_tokens} out{cost}	{backend}: {input_tokens} في / {output_tokens} out{cost}
+{cost} (estimate)	{cost} (estimate)
+{c} · {size}	{c} · {size}
+{done} of {all} done	{done} من {all} تم
+{gb} GB for bigger ones	{gb} GB ل bigger ones
+{gb} GB for programs up to {size}	{gb} GB ل برامج فوق إلى {size}
+{gb} GB up to {size}	{gb} GB فوق إلى {size}
+{held} of {n} requirements met	{held} من {n} requirements met
+{id} · {summary}	{id} · {summary}
+{in} in, {out} out.	{in} في {out} out.
+{k}: {s}	{k}: {s}
+{lbl}  {}	{lbl} {}
+{line}, and {n} more	{line}, و {n} المزيد
+{mb} MB	{mb} MB
+{name} builds what you make.	{name} builds ماذا you make.
+{name} builds what you make; answers come from {brain}.	{name} builds ماذا you make; answers come من {brain}.
+{name} can't be attached: a message takes pictures up to 20 MB.	{name} can't be attached:  رسالة takes صور فوق إلى 20 MB.
+{name} can't be attached: it isn't a PNG, JPEG, GIF or WebP picture.	{name} can't be attached: it isn't  PNG, JPEG, GIF أو WebP صورة
+{name} is ready	{name} is جاهز
+{name} is ready.	{name} is جاهز
+{name} isn't available yet in this build.	{name} isn't متوفر yet في this ابنِ
+{name} isn't on this computer yet.	{name} isn't على this كمبيوتر yet.
+{name} key	{name} مفتاح
+{n} actions done so far	{n} actions تم so بعيد
+{n} days ago	{n} أيام ago
+{n} h ago	{n} h ago
+{n} item(s)	{n} item(s)
+{n} job(s) running	{n} job(s) running
+{n} min ago	{n} min ago
+{n} picture(s) to match.	{n} picture(s) إلى match.
+{n} step(s) didn't work and were retried or skipped.	{n} step(s) didn't work و were retried أو skipped.
+{n} tokens	{n} tokens
+{n} · ${spent:.2} of ${budget:.2}	{n} · ${spent:.2} من ${budget:.2}
+{n} · ${spent} of ${budget}	{n} · ${spent} من ${budget}
+{scenes} {}	{scenes} {}
+{text}, {}	{text}, {}
+{title} hit a bug and stopped safely. ({what})	{title} hit  bug و stopped safely. ({what})
+{title} {id}	{title} {id}
+{title} · {:.0}%	{title} · {:.0}%
+{tool} finished	{tool} finished
+{tool}: {}	{tool}: {}
+{what} panicked: {msg}	{what} panicked: {msg}
+{} GB	{} GB
+{} isn't available yet in this build.	{} isn't متوفر yet في this ابنِ
+{} item(s)	{} item(s)
+{} key	{} مفتاح
+{} report.md	{} report.md
+{} {name}	{} {name}
+{} {said}	{} {said}
+{} {then}	{} {then}
+{} {v}	{} {v}
+{} {why}	{} {why}
+{} {} · {}{cost}	{} {} · {}{cost}
+{} · {mode}	{} · {mode}
+{}: {e}	{}: {e}
+{}: {some}{more}.	{}: {some}{more}.
+{}: {state}	{}: {state}
+{}h {:02}m	{}h {:02}m
+{}m {:02}s	{}m {:02}s
+— use the filter to find the rest.	— use  صّفّ إلى ابحث  rest.
+… {n} more	… {n} المزيد
+… {n} older	… {n} older
+… {} more	… {} المزيد
+… {} older	… {} older
+← Back	← الخلف
+↑↓ to move · Enter to run · Esc to close	↑↓ إلى move · Enter إلى شغّل · Esc إلى أغلق
