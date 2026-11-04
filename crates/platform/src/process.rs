@@ -59,8 +59,10 @@ pub const DEFAULT_STDERR_CAP: usize = 1024 * 1024;
 /// How long to wait for the output threads after the child exits (an escaped grandchild may hold
 /// the pipe open; we stop waiting rather than hang).
 const DRAIN_GRACE: Duration = Duration::from_secs(2);
-/// Longest partial line kept before it is delivered anyway.
-const MAX_LINE: usize = 1024 * 1024;
+/// Longest partial line kept before it is delivered anyway. MCP servers answer `tools/list` as
+/// one JSON-RPC line that can be megabytes (a plugin with many richly described tools), so this
+/// must cover such a whole line: a fragment is not JSON, and the answer would never parse.
+const MAX_LINE: usize = 16 * 1024 * 1024;
 
 /// A program to run, built fluently.
 #[derive(Clone)]
@@ -1443,6 +1445,27 @@ mod tests {
         assert!(!help.contains("by hand"), "{help}");
         assert_eq!(err.code, ErrorCode::ProgramFailed);
         assert!(err.message.contains("bad thing"), "{}", err.message);
+    }
+
+    /// An MCP plugin answers `tools/list` as one JSON-RPC line that can be megabytes (a server with
+    /// many richly described tools). A line past the old 1 MiB cap arrived in fragments, so the
+    /// answer never parsed and the plugin timed out: the whole line must arrive as one line.
+    #[cfg(unix)]
+    #[test]
+    fn a_multimegabyte_line_arrives_whole() {
+        let (tx, rx) = std::sync::mpsc::channel();
+        let wanted = 3 * 1024 * 1024 + 7; // past the old cap, and not a round number
+        let out = Process::new("sh")
+            .args(["-c", &format!("head -c {wanted} /dev/zero | tr '\\0' a; echo")])
+            .on_stdout_line(move |l| {
+                let _ = tx.send(l.len());
+            })
+            .timeout(Duration::from_secs(30))
+            .run()
+            .unwrap();
+        assert!(out.success);
+        let lines: Vec<usize> = rx.into_iter().collect();
+        assert_eq!(lines, vec![wanted], "one line of {wanted} bytes, not {} fragments of {:?}", lines.len(), lines);
     }
 
     #[test]
