@@ -469,11 +469,9 @@ mod tests {
 
     #[test]
     fn closed_port_is_fast_and_negative() {
-        let l = std::net::TcpListener::bind("127.0.0.1:0").unwrap();
-        let port = l.local_addr().unwrap().port();
-        drop(l);
+        // Binding port 0 chooses a nonzero port, so no listener can take this endpoint.
         let t = Instant::now();
-        assert!(probe_local("X", &format!("http://127.0.0.1:{port}/v1")).is_none());
+        assert!(probe_local("X", "http://127.0.0.1:0/v1").is_none());
         assert!(t.elapsed() < Duration::from_secs(1));
     }
 
