@@ -785,6 +785,13 @@ Owner: open · Status: in progress
 - [ ] Bun: take source maps and bytecode out as files; a standalone `.pyz`
 - [ ] `native_source_folder_write` uses the built-in decompiler only: use Ghidra in Deep mode when
       it's there
+- [x] Keep stand-in response samples distinct when headers, content types or body-availability metadata differ.
+      Compare header names without case and ignore ordering between different names, preserving each name's value order.
+      At the sample cap, a usable answer can replace an unavailable 304 for the same path, query and request key;
+      other requests keep their missing-body evidence. Refused bodies cannot replace that evidence.
+      Revision `f79dc0bd` passed [full Linux CI](https://github.com/storytold/craft-anything/actions/runs/41793241151):
+      all five original metadata regressions and nine header and capacity regressions passed.
+      — claimed: Afloat16, branch bugfix/r3.11-standin-sample-metadata-20261103b
 - [ ] `native_publisher_show` hashes the file minus the signature fields, not section by section;
       a file with unusual gaps between sections can read as different
 
