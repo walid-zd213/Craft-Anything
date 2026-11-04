@@ -88,7 +88,7 @@ pub fn check(root: &Path) -> bool {
         lookups.0.0.insert(spec.toolset.title().to_string());
     }
     let mut ok = true;
-    for code in ["zh-hans", "zh-hant", "ru", "ko", "de"] {
+    for code in ["zh-hans", "zh-hant", "ru", "ko", "de", "ka"] {
         let path = source.join("i18n").join(format!("{code}.tsv"));
         let Ok(text) = std::fs::read_to_string(&path) else {
             eprintln!("i18n: can't read {}", path.display());

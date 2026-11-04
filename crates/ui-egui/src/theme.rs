@@ -661,6 +661,7 @@ mod tests {
         ctx.run_ui(egui::RawInput::default(), |_| {}).textures_delta.clear();
         let texts = [
             ("Korean", "한국어 사용자"),
+            ("Georgian", "ქართული ენა"),
             ("Chinese", "你好，世界"),
             ("Japanese", "こんにちは、カタカナ"),
             ("Thai", "ภาษาไทย"),
@@ -674,6 +675,12 @@ mod tests {
         ];
         for (script, text) in texts {
             for font in [FontId::proportional(14.0), FontId::monospace(14.0), medium(14.0), semibold(14.0)] {
+                // egui's bundled Hack (monospace) draws Georgian itself, and it is also the face egui
+                // takes as its "no glyph" marker (it has U+25FB), so `has_glyphs` reports boxes for
+                // it. The craft-fonts face is checked through the other three families.
+                if script == "Georgian" && font.family == FontFamily::Monospace {
+                    continue;
+                }
                 assert!(ctx.fonts_mut(|f| f.has_glyphs(&font, text)), "{script} ({text}) shows as boxes in {font:?}");
             }
         }
