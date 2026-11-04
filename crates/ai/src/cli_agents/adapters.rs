@@ -165,6 +165,11 @@ pub trait AgentAdapter: Send + Sync {
     fn check_tool_server(&self, _stop: &CancelToken) -> Result<(), ToolError> {
         Ok(())
     }
+    /// An environment variable that hands a local native run our tool server, for an agent that
+    /// takes it from its environment rather than its arguments.
+    fn mcp_env(&self, _mcp: &McpCommand) -> Result<Option<(&'static str, String)>, ToolError> {
+        Ok(None)
+    }
     /// The file in which this computer keeps the agent's saved session `id`, so the project can
     /// keep a copy that travels with it. `None`: it keeps none we can copy, or not here.
     fn session_file(&self, _id: &str) -> Option<std::path::PathBuf> {

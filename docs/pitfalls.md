@@ -420,6 +420,13 @@ builder preflight still checked ACP's helper and the native adapter never suppli
 Share transport selection between preflight and execution; reject unsupported native options
 before running a process rather than starting an agent without the tools its task requires.
 
+**A config route the installed version ignores.** OpenCode V2 (2.2.5) ignores
+`OPENCODE_CONFIG_CONTENT`, and `opencode run` hands the turn to a background service that never sees the
+run's environment, so the builder ran without our tools and fell back to calling the CLI from a shell.
+V2 also names a tool call `id` (V1: `callID`), so every tool event was dropped and the feed stayed empty
+for the whole turn. Use a file in `OPENCODE_CONFIG` with `run --standalone`, and confirm a live run
+reached the server (`mcp connected server=craft-anything` in OpenCode's log), not just that it started.
+
 **Keywords that only some code paths honour.** "…in Rust" picked Rust for apps but not for games, so
 a headless game rebuild stopped at once for want of Unity. It was found only by a live run. Run the
 real flow end to end after changing how requests are read, and add the case as a test.

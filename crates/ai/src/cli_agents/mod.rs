@@ -821,6 +821,15 @@ fn run_cli(spec: &CliSpec, text: &str, retry: bool, tx: &Sender<AgentEvent>, sto
     // 30 minutes and a background build at 10).
     let (turn, quiet) = if builder { (24 * 3600, 8 * 3600) } else { (30 * 60, 15 * 60) };
     let mut env = agent_env(builder, spec.options.effort);
+    if remote.is_none() {
+        match adapter.mcp_env(&mcp) {
+            Ok(var) => env.extend(var),
+            Err(e) => {
+                let _ = tx.send(AgentEvent::Error { message: e.message, remediation: e.remediation, log: None });
+                return nothing_done(&name);
+            }
+        }
+    }
     // Here the adapter's process runs the agent in its folder (`AgentAdapter::in_folder`); on
     // another computer over SSH it's the folder chosen there, else the agent keeps its own.
     if remote.is_some()
@@ -1277,61 +1286,21 @@ mod tests {
     }
     use crate::BackendKind;
 
-    /// Explicit OpenCode picks cannot pass ACP preflight then run natively without our MCP server.
+    /// Explicit OpenCode picks run natively, where the tool server comes through inline config.
     #[test]
-    fn explicit_opencode_picks_are_refused_before_native_chat_or_build() {
+    fn explicit_opencode_picks_run_natively_with_our_tools() {
         let adapter = adapter_for("opencode");
         let defaults = BackendOptions { acp: Some(true), ..Default::default() };
         assert!(selected_acp_args(adapter.as_ref(), "opencode", &defaults).is_some());
         for (model, thinking) in [(Some("test/model"), None), (None, Some(crate::Effort::High)), (Some("test/model"), Some(crate::Effort::Max))] {
             for acp in [false, true] {
-                let options = BackendOptions {
-                    command: Some("missing-test-opencode".into()),
-                    cli_model: model.map(str::to_string),
-                    cli_thinking: thinking,
-                    acp: Some(acp),
-                    ..Default::default()
-                };
-                let refused = check_builder_tools(adapter.as_ref(), "opencode", &options, &CancelToken::default()).unwrap_err();
-                assert_eq!(refused.code, ErrorCode::BadSettings);
-                assert!(refused.message.contains("cannot yet connect"));
-                for host in [None, Some("test-host")] {
-                    for building in [false, true] {
-                        let config = BackendConfig {
-                            name: "OpenCode".into(),
-                            kind: BackendKind::AgentCli,
-                            model: "opencode".into(),
-                            base_url: None,
-                            ssh_host: host.map(str::to_string),
-                            enabled: true,
-                        };
-                        let mut spec = CliSpec::new(config, options.clone(), false, None);
-                        if building {
-                            spec.builder = Some(Builder { investigation: None, inbox: PathBuf::from("test-inbox") });
-                        }
-                        assert!(acp_for(&spec).is_none());
-                        let mut c = if building { builder_conversation(spec, Arc::new(|_, _| false)) } else { conversation(spec) };
-                        c.send("test");
-                        let deadline = std::time::Instant::now() + Duration::from_secs(5);
-                        let mut events = Vec::new();
-                        while !events.iter().any(|e| matches!(e, AgentEvent::TurnDone { .. })) {
-                            assert!(std::time::Instant::now() < deadline, "missing terminal event: {events:?}");
-                            events.extend(c.poll());
-                            std::thread::sleep(Duration::from_millis(1));
-                        }
-                        assert!(!c.is_busy());
-                        events.extend(c.poll());
-                        assert!(
-                            matches!(events.as_slice(), [
-                            AgentEvent::Error { message, remediation: Some(_), log: None },
-                            AgentEvent::TurnDone { backend, input_tokens: 0, output_tokens: 0, cost_usd: None, cost_is_estimate: false }
-                        ] if message == &refused.message && backend == "OpenCode"),
-                            "{events:?}"
-                        );
-                    }
-                }
+                let options = BackendOptions { cli_model: model.map(str::to_string), cli_thinking: thinking, acp: Some(acp), ..Default::default() };
+                assert!(selected_acp_args(adapter.as_ref(), "opencode", &options).is_none());
+                assert!(adapter.check_native_options(&options).is_ok());
             }
         }
+        let mcp = McpCommand { command: "craft-anything-cli".into(), args: vec![], notes: None };
+        assert!(adapter.mcp_env(&mcp).unwrap().is_some());
     }
 
     /// Validation failures finish exactly once, preserving cancellation status and other error details.

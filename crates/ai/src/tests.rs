@@ -145,10 +145,10 @@ fn hub() -> (AiHub, tempfile::TempDir) {
     (h, dir)
 }
 
-/// A CLI stand-in checks saved selections and refuses native execution until its MCP server is wired.
+/// A CLI stand-in checks saved selections, and an explicit one runs natively with our MCP server.
 #[cfg(unix)]
 #[test]
-fn opencode_selection_is_validated_saved_and_refused_without_native_mcp() {
+fn opencode_selection_is_validated_saved_and_run_natively_with_our_mcp_server() {
     use std::os::unix::fs::PermissionsExt;
     let (h, dir) = hub();
     let program = dir.path().join("agent");
@@ -156,8 +156,9 @@ fn opencode_selection_is_validated_saved_and_refused_without_native_mcp() {
     let seen = dir.path().join("arguments.txt");
     let quote = |p: &std::path::Path| ssh::shell_quote(&p.display().to_string());
     let script = format!(
-        "#!/bin/sh\ncase \"$1\" in\napi) cat {};;\nrun) printf '%s\\n' \"$@\" > {}; printf 'done';;\n*) exit 8;;\nesac\n",
+        "#!/bin/sh\ncase \"$1\" in\napi) cat {};;\nrun) printf '%s\\n' \"$@\" > {}; cat \"$OPENCODE_CONFIG\" >> {}; printf 'done';;\n*) exit 8;;\nesac\n",
         quote(&catalogue),
+        quote(&seen),
         quote(&seen)
     );
     std::fs::write(&program, script).unwrap();
@@ -185,12 +186,13 @@ fn opencode_selection_is_validated_saved_and_refused_without_native_mcp() {
     }
     events.extend(conversation.poll());
     events.retain(|event| !matches!(event, AgentEvent::Status { .. }));
-    assert!(
-        matches!(events.as_slice(), [AgentEvent::Error { message, .. }, AgentEvent::TurnDone { .. }]
-        if message.contains("cannot yet connect")),
-        "{events:?}"
-    );
-    assert!(!seen.exists(), "an explicit selection must not start a run without its MCP server");
+    assert!(matches!(events.last(), Some(AgentEvent::TurnDone { .. })), "{events:?}");
+    // The arguments, one per line, then the config file the run was handed.
+    let ran = std::fs::read_to_string(&seen).unwrap();
+    let args: Vec<&str> = ran.lines().collect();
+    assert_eq!(args.get(..4), Some(["run", "--standalone", "--model", "test/alias#max"].as_slice()), "{ran}");
+    let config: Value = serde_json::from_str(ran.lines().find(|l| l.starts_with("{\"mcp\"")).unwrap()).unwrap();
+    assert_eq!(config["mcp"][cli_agents::MCP_NAME]["type"], "local", "the run gets our MCP server: {ran}");
     assert!(h.set_agent_model("OpenCode", Some("test/alias"), Some(Effort::Xhigh)).is_err());
     assert_eq!(h.options()["OpenCode"].cli_thinking, Some(Effort::Max), "a failed validation changes nothing");
     let stale = h.model_context("OpenCode").unwrap();

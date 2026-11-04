@@ -488,8 +488,10 @@ Owner: open · Status: in progress
       and model-with-variant command forms, and share transport selection between preflight and runs.
 - [x] Rebase after #567 and translate the ten model-selection strings and two agent tool titles
       in the Russian catalogue, restoring coverage and catalogue key parity.
-- [ ] Supply and verify the run's Craft Anything MCP server in native OpenCode before enabling
-      explicit model/thinking execution (currently refused for chat and builds, locally and over SSH).
+- [x] Supply and verify the run's Craft Anything MCP server in native OpenCode before enabling
+      explicit model/thinking execution: a config file in `OPENCODE_CONFIG` with `run --standalone`
+      (verified live locally). — claimed: advokat11, branch bugfix/r2.2-opencode-native-mcp
+- [ ] Hand native OpenCode runs over SSH the Craft Anything MCP server (the config file is local).
 - [ ] Verify OpenCode model discovery and an explicit thinking selection on a live SSH host,
       and complete a live generation with the selected model and variant (local catalogue verified).
 
