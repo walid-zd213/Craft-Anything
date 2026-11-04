@@ -545,8 +545,16 @@ Owner: open · Status: in progress
 - [x] Windows: look in `%LOCALAPPDATA%\agy\bin` too (#62) — claimed: Afloat16, branch bugfix/r2.2-antigravity-search-20261103
 - [ ] "Claude Code on <ssh host>" is offered for any SSH host, whether or not it has Claude Code
       (#62)
-- [ ] Gemini CLI's sign-in reportedly refuses individuals now (#400): check, and stop recommending
-      it in the builder setup dialog if so
+- [x] Gemini CLI's sign-in refuses individuals now (#400: "This client is no longer supported for
+      Gemini Code Assist for individuals… migrate to the Antigravity suite", from a user's terminal,
+      not run here): the builder setup text names Antigravity instead of Gemini CLI
+- [x] A Gemini CLI build that fails with that sign-in message says to use Antigravity and isn't
+      retried (when Gemini CLI reports it as a stream `error` event; the real output wasn't
+      seen here), and Antigravity's Windows folder (`%LOCALAPPDATA%\Antigravity`, from a
+      third-party guide) is searched, so Settings → AI finds it when the app's PATH is older
+- [ ] Check live on Windows 10: Detect finds Antigravity after a fresh install, a build with it
+      reaches Ready, and Gemini CLI's refusal reaches the app as an `error` event (it may come on
+      stderr instead)
 
 ### R2.4 Runtime study for apps and games (with consent)
 Owner: maintainers · Status: in progress

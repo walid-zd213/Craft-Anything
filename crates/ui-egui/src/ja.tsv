@@ -95,7 +95,7 @@ Build with {name}	{name} でビルド
 Build with {name} instead	代わりに {name} でビルド
 Build without it	それなしでビルド
 Builder's questions:	ビルダーからの質問:
-Building needs a coding agent on this computer (Claude Code, Codex or Gemini CLI: install one and sign in to it once in its own window), or an AI with an API key. Craft Anything never sees your account.	ビルドには、このコンピュータ上のコーディングエージェント(Claude Code、Codex、Gemini CLI のいずれかをインストールし、それぞれのウィンドウで一度サインイン)か、API キーを使う AI が必要です。Craft Anything がアカウントを見ることはありません。
+Building needs a coding agent on this computer (Claude Code, Codex or Antigravity: install one and sign in to it once in its own window), or an AI with an API key. Craft Anything never sees your account.	ビルドには、このコンピュータ上のコーディングエージェント(Claude Code、Codex、Antigravity のいずれかをインストールし、それぞれのウィンドウで一度サインイン)か、API キーを使う AI が必要です。Craft Anything がアカウントを見ることはありません。
 Building needs a coding agent such as Claude Code, or an AI with an API key.	ビルドには Claude Code などのコーディングエージェントか、API キーを使う AI が必要です。
 Builds	ビルド
 Builds and answers may use it again.	ビルドと回答が再びこの AI を使えるようになります。

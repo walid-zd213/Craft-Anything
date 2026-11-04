@@ -17,7 +17,7 @@ Built by	Construit par
 Whatever Settings → AI builds with.	Celui utilisé dans Réglages → IA pour construire.
 found on this computer; set up when you start	trouvé sur cet ordinateur ; configuré au démarrage
 Set up a builder	Configurer un constructeur
-Building needs a coding agent on this computer (Claude Code, Codex or Gemini CLI: install one and sign in to it once in its own window), or an AI with an API key. Craft Anything never sees your account.	Pour construire, il faut un agent de code sur cet ordinateur (Claude Code, Codex ou Gemini CLI : installez-en un et connectez-vous-y une fois dans sa propre fenêtre), ou une IA avec une clé d'API. Craft Anything ne voit jamais votre compte.
+Building needs a coding agent on this computer (Claude Code, Codex or Antigravity: install one and sign in to it once in its own window), or an AI with an API key. Craft Anything never sees your account.	Pour construire, il faut un agent de code sur cet ordinateur (Claude Code, Codex ou Antigravity : installez-en un et connectez-vous-y une fois dans sa propre fenêtre), ou une IA avec une clé d'API. Craft Anything ne voit jamais votre compte.
 Looking on this computer…	Recherche sur cet ordinateur…
 No coding agent was found on this computer yet.	Aucun agent de code n'a encore été trouvé sur cet ordinateur.
 Found on this computer	Trouvé sur cet ordinateur

@@ -1486,6 +1486,24 @@ mod tests {
         assert!(a.contains(&"mcp_servers.craft-anything.args=[\"mcp\", \"--project\", \"/p/x.cany\"]".to_string()));
     }
 
+    /// #400: Gemini CLI refuses individual accounts and says to move to Antigravity. The error says
+    /// where to go and is not retried; another Gemini error keeps its own words.
+    #[test]
+    fn gemini_cli_refusing_individuals_points_to_antigravity() {
+        let adapter = adapter_for("gemini-cli");
+        let mut p = StreamParser::new(adapter.clone());
+        let refused = r#"{"type":"error","message":"Failed to sign in. Message: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products"}"#;
+        let events = adapter.parse(&mut p, &serde_json::from_str::<Value>(refused).unwrap());
+        let text = format!("{events:?}");
+        assert!(text.contains("no longer supported") && text.contains("Use Antigravity"), "{text}");
+        assert!(p.failure.is_some_and(|f| f.kind == crate::failure::FailureKind::Authentication && !f.retryable()), "not retried");
+        let mut p = StreamParser::new(adapter.clone());
+        let other = r#"{"type":"error","message":"quota exceeded"}"#;
+        let text = format!("{:?}", adapter.parse(&mut p, &serde_json::from_str::<Value>(other).unwrap()));
+        assert!(text.contains("quota exceeded") && !text.contains("Antigravity"), "{text}");
+        assert!(p.failure.is_none());
+    }
+
     #[test]
     fn gemini_long_prompt_goes_in_on_stdin() {
         // npm starts Gemini CLI through `gemini.cmd`, where cmd.exe allows 8,191 characters.

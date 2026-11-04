@@ -834,6 +834,16 @@ fn codex_tool_text(item: &Value, tool: &str, ours: bool) -> String {
 /// Codex's wording when a tool needs approval and its policy is `never` (#540).
 const CODEX_NEEDS_APPROVAL: &str = "requires approval, but approval policy is never";
 
+/// Gemini CLI refuses individual accounts now and says to move to Antigravity (#400): "This client is
+/// no longer supported for Gemini Code Assist for individuals… migrate to the Antigravity suite".
+/// Another sign-in or another try can't change that, so the way on is a different agent.
+fn gemini_retired_hint(message: &str) -> Option<String> {
+    let m = message.to_lowercase();
+    (m.contains("no longer supported") || m.contains("migrate to the antigravity")).then(|| {
+        "Google has ended Gemini CLI for individual accounts. Use Antigravity (Settings → AI → Antigravity) or another coding agent or AI to build with, then press Try again.".to_string()
+    })
+}
+
 /// Gemini CLI (`--output-format stream-json`). Flags are checked against `gemini --help`.
 pub struct GeminiCli;
 
@@ -883,7 +893,15 @@ impl AgentAdapter for GeminiCli {
                 let text = v.get("output").map(content_text).unwrap_or_default();
                 out.push(p.finished(&id, ok, &text));
             }
-            "error" => out.push(AgentEvent::Error { message: format!("Gemini CLI: {}", s("message")), remediation: None, log: None }),
+            "error" => {
+                let message = s("message");
+                let remediation = gemini_retired_hint(&message);
+                if remediation.is_some() {
+                    // Signing in again, or asking again, gets the same answer.
+                    p.failure = Some(TurnFailure::new(FailureKind::Authentication));
+                }
+                out.push(AgentEvent::Error { message: format!("Gemini CLI: {message}"), remediation, log: None });
+            }
             "result" => {
                 p.saw_result = true;
                 if let Some(st) = v.get("stats") {
