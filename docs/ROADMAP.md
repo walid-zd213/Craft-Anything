@@ -392,7 +392,8 @@ yet, and the quick start is how every new person begins.
 **A real program, device or file:**
 - [ ] Cutter sessions: try them against a real Cutter, including whether `=h&` keeps Cutter
       responsive (only a stand-in server so far)
-- [ ] Vineflower: run it once on a real JAR (no Java on the machine it was written on)
+- [x] Vineflower: run it once on a real JAR (no Java on the machine it was written on)
+      — claimed: hasnain607, branch docs/r5.7-vineflower-live-run
 - [ ] Verify the 23 unverified adb tools; record results in tool-status.md
 - [ ] Android locales: try `only_locales` on a real APK (only the test fixture so far)
 - [ ] `app_graphs_compare` on the two real Electron releases again, to count how many of the
