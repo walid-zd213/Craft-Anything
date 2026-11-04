@@ -787,6 +787,11 @@ Owner: open · Status: in progress
       it's there
 - [ ] `native_publisher_show` hashes the file minus the signature fields, not section by section;
       a file with unusual gaps between sections can read as different
+- [x] Enforce stand-in per-body and total byte budgets on the text that is actually retained after redaction;
+      deduplicate consecutive samples before charging the capture budget.
+      — claimed: Afloat16, branch bugfix/r3.11-standin-redacted-budget-20261103b
+      Revision `d601bc4e` passed [full Linux CI](https://github.com/storytold/craft-anything/actions/runs/41788735130):
+      all four retained-budget regressions and six deduplication regressions passed.
 
 ### R3.12 Format parser correctness
 Owner: open · Status: in progress

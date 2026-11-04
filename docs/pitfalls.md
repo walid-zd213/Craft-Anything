@@ -734,3 +734,8 @@ sum the same payload repeatedly. Count checksum byte visits across the whole sca
 cancellation callback inside long sums, and distinguish skipped verification from a mismatch.
 Test overlapping candidates with correct checksums and a complete nested archive so a structural
 trailer cannot turn unchecked data into a high-confidence result.
+
+**A capture budget checked before deduplication changed the replay.** Redaction expanded a repeated
+body, so its second copy was rejected before it could be discarded as a duplicate. Apply aggregate
+budgets only to distinct bodies actually retained. When a budget removes a body, preserve unavailable
+cached 304 responses and deduplicate identical omitted samples.
