@@ -18,6 +18,8 @@ static RETRY_IN_SOFTWARE: std::sync::atomic::AtomicBool = std::sync::atomic::Ato
 #[cfg(any(target_os = "linux", test))]
 mod linux_gpu;
 
+/// Opens the window on the engine and AI hub (a path on the command line opens as the first
+/// target); if the window can't start, says why and where its log is.
 fn main() -> eframe::Result {
     let args: Vec<String> = std::env::args().skip(1).collect();
     if args.iter().any(|a| a == "--version" || a == "-V") {
@@ -102,6 +104,7 @@ fn main() -> eframe::Result {
                     shown_by_app.store(true, std::sync::atomic::Ordering::Relaxed);
                 });
                 app.load_prefs(cc.storage);
+                app.install_menu_bar(&cc.egui_ctx);
                 if let Some(p) = open {
                     app.open_path(p);
                 }

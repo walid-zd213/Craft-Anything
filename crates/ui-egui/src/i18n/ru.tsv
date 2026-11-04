@@ -1423,3 +1423,20 @@ Add Unreal's Linux C++ toolchain	Добавить цепочку инструм�
 Run Engine/Build/BatchFiles/Linux/SetupToolchain.sh in the engine folder to install its bundled Clang toolchain. If you built Unreal from source, Setup.sh downloads the native toolchain instead. A system Clang may not match the engine's version.	Запустите Engine/Build/BatchFiles/Linux/SetupToolchain.sh в папке движка, чтобы установить встроенную цепочку инструментов Clang. При сборке из исходников Setup.sh вместо этого скачивает нативную цепочку инструментов. Системный Clang может не подходить к версии движка.
 Unreal is here, but it also needs Xcode.	Unreal установлен, но также требует Xcode.
 About 60 GB, an Epic Games account, and Xcode.	Около 60 ГБ, аккаунт Epic Games и Xcode.
+File	Файл
+View	Вид
+Window	Окно
+Help	Справка
+Command palette	Палитра команд
+Craft Anything on GitHub	Craft Anything на GitHub
+Report a problem…	Сообщить о проблеме…
+Quit Craft Anything	Завершить Craft Anything
+About Craft Anything	О программе Craft Anything
+Services	Службы
+Hide Craft Anything	Скрыть Craft Anything
+Hide others	Скрыть остальные
+Show all	Показать все
+Close window	Закрыть окно
+Full screen	Полноэкранный режим
+Zoom	Изменить масштаб
+Bring all to front	Все окна — на передний план

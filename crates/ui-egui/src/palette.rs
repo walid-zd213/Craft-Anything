@@ -9,7 +9,7 @@ use craft_anything_engine::{Consent, Mode};
 use egui::{Margin, RichText, Vec2};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-enum AppCommand {
+pub(crate) enum AppCommand {
     OpenFile,
     OpenFolder,
     ToggleMode,
@@ -207,7 +207,18 @@ pub fn show(app: &mut CraftApp, ctx: &egui::Context) {
     }
 }
 
-fn run_app_command(app: &mut CraftApp, c: AppCommand) {
+/// Opens or closes the palette (Ctrl/⌘ K), once first run is done.
+pub(crate) fn toggle(app: &mut CraftApp) {
+    if app.settings.first_run_done {
+        app.state.palette.open = !app.state.palette.open;
+        app.state.palette.query.clear();
+        app.state.palette.selected = 0;
+        app.state.palette.form_tool = None;
+    }
+}
+
+/// Runs one of the app's own commands, from the palette or the macOS menu bar.
+pub(crate) fn run_app_command(app: &mut CraftApp, c: AppCommand) {
     match c {
         AppCommand::OpenFile => app.pick(Pick::OpenFile),
         AppCommand::OpenFolder => app.pick(Pick::OpenFolder),

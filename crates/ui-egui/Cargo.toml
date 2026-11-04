@@ -4,6 +4,7 @@ description = "The Craft Anything egui interface: Beginner and Experienced modes
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
 publish = false
 build = "build.rs"
 
@@ -33,6 +34,10 @@ arboard = { workspace = true }
 pollster = "0.4"
 # Safe, small OS-language lookup; MIT OR Apache-2.0, no native runtime dependency.
 sys-locale = "0.3.2"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+# The system menu bar (a safe API over AppKit); MIT OR Apache-2.0.
+muda = { version = "0.21.2", default-features = false }
 
 [dev-dependencies]
 craft-anything-testkit = { workspace = true }

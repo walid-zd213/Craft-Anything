@@ -25,6 +25,8 @@ pub mod jobs;
 pub mod just_ask;
 pub mod make;
 pub mod manage;
+#[cfg(target_os = "macos")]
+pub mod menu;
 pub mod palette;
 pub mod paste;
 pub mod pins;
@@ -423,6 +425,9 @@ pub struct CraftApp {
     pub persist: bool,
     /// Never open native dialogs (tests and snapshots).
     pub headless: bool,
+    /// The macOS menu bar, once the window is open ([`CraftApp::install_menu_bar`]).
+    #[cfg(target_os = "macos")]
+    pub menu_bar: Option<menu::MenuBar>,
     pub view: SessionView,
     pub jobs: jobs::Jobs<Done>,
     pub conversation: Option<Box<dyn Conversation>>,
@@ -548,6 +553,8 @@ impl CraftApp {
             first_frames: None,
             persist: true,
             headless: false,
+            #[cfg(target_os = "macos")]
+            menu_bar: None,
             view: SessionView::default(),
             jobs: jobs::Jobs::default(),
             conversation: None,
@@ -615,6 +622,16 @@ impl CraftApp {
     pub fn setup_context(ctx: &egui::Context) {
         theme::install_fonts(ctx);
         egui_extras::install_image_loaders(ctx);
+    }
+
+    /// Gives the macOS app its menu bar (nothing elsewhere). Call once the window is open.
+    pub fn install_menu_bar(&mut self, ctx: &egui::Context) {
+        #[cfg(target_os = "macos")]
+        {
+            self.menu_bar = menu::MenuBar::install(ctx);
+        }
+        #[cfg(not(target_os = "macos"))]
+        let _ = ctx;
     }
 
     /// Call `done` once [`FIRST_FRAMES`] frames have been drawn and shown: the window is really up by
@@ -1736,6 +1753,8 @@ impl CraftApp {
         let ctx = ui.ctx().clone();
         self.tick(&ctx);
         self.shortcuts(&ctx);
+        #[cfg(target_os = "macos")]
+        menu::update(self, &ctx);
         let t = theme::Tokens::get(&ctx);
         // The title bar is on every screen: it is how the window moves, resizes and closes.
         egui::Panel::top("titlebar").exact_size(titlebar::HEIGHT).frame(egui::Frame::new().fill(t.chrome)).show(ui, |ui| {
@@ -1852,13 +1871,12 @@ impl CraftApp {
         painter.galley(inner.center() - g.size() / 2.0, g, t.text);
     }
 
+    /// Keys that work on every screen: Ctrl/⌘ K for the palette, and Esc to close what's on top
+    /// (the palette, a dialog, Settings) or go back home.
     fn shortcuts(&mut self, ctx: &egui::Context) {
         let (palette, esc) = ctx.input_mut(|i| (i.consume_key(egui::Modifiers::COMMAND, egui::Key::K), i.key_pressed(egui::Key::Escape)));
-        if palette && self.settings.first_run_done {
-            self.state.palette.open = !self.state.palette.open;
-            self.state.palette.query.clear();
-            self.state.palette.selected = 0;
-            self.state.palette.form_tool = None;
+        if palette {
+            palette::toggle(self);
         }
         if esc {
             if self.state.palette.open {
