@@ -268,10 +268,15 @@ pub fn segmented_sized(ui: &mut Ui, options: &[&str], selected: usize, height: f
 
 /// A small status label on a tint.
 pub fn pill(ui: &mut Ui, text: &str, fg: Color32, bg: Color32) -> Response {
+    pill_sized(ui, text, fg, bg, 11.0)
+}
+
+/// [`pill`] with a given label size, its padding scaled to match.
+pub fn pill_sized(ui: &mut Ui, text: &str, fg: Color32, bg: Color32, text_size: f32) -> Response {
     let t = Tokens::get(ui.ctx());
     let label = tr(text);
-    let g = label_galley(ui, &label, 11.0, fg);
-    let size = Vec2::new(g.size().x + 14.0, g.size().y + 8.0);
+    let g = label_galley(ui, &label, text_size, fg);
+    let size = Vec2::new(g.size().x + text_size * 14.0 / 11.0, g.size().y + text_size * 8.0 / 11.0);
     let (rect, resp) = ui.allocate_exact_size(size, Sense::hover());
     ui.painter().rect_filled(rect, t.r_sm(), bg);
     ui.painter().galley_with_override_text_color(rect.center() - g.size() / 2.0, g, fg);

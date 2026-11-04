@@ -681,8 +681,11 @@ Gaps found while using the app for real projects.
       open, so the command doesn't return until it closes (#207). Every fix found needs `unsafe` or
       an unstable API: an exception to rule 9, or a limit we document. Meanwhile a reproducing test
       marked `#[ignore]` and a line in the CLI docs are welcome
-- [ ] macOS: the window draws Windows-style controls at the top right, since the app turns off the
-      system's title bar (`with_decorations(false)`), and its icon is bigger than the system's (#20)
+- [x] macOS: the window drew Windows-style controls at the top right, since the app turned off the
+      system's title bar (`with_decorations(false)`); it now keeps the system's buttons, frame and
+      resize edges under a see-through title bar, which is 32 pt there so the buttons sit centred
+      in it (#20)
+- [ ] macOS: the app's icon is bigger than the system's (#20)
 - [ ] Show a command's output while it runs: Claude Code reports a tool's result only when it
       ends, so a long `cargo build` is one quiet line until then. Watching the agent's child
       processes from outside could say what's running and for how long

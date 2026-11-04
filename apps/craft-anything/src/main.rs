@@ -18,6 +18,8 @@ static RETRY_IN_SOFTWARE: std::sync::atomic::AtomicBool = std::sync::atomic::Ato
 #[cfg(any(target_os = "linux", test))]
 mod linux_gpu;
 
+/// Opens the window on the engine and AI hub (a path on the command line opens as the first
+/// target); if the window can't start, says why and where its log is.
 fn main() -> eframe::Result {
     let args: Vec<String> = std::env::args().skip(1).collect();
     if args.iter().any(|a| a == "--version" || a == "-V") {
@@ -54,10 +56,15 @@ fn main() -> eframe::Result {
         .with_app_id("ai.storyteller.craft-anything")
         .with_inner_size([1360.0, 860.0])
         .with_min_inner_size([760.0, 520.0])
-        // Our own title bar draws the window controls, moves and resizes the window.
-        .with_decorations(false)
         .with_resizable(true)
         .with_drag_and_drop(true);
+    // Our own title bar draws the window controls, moves and resizes the window. macOS keeps its
+    // own buttons and frame instead, with the content reaching under a see-through title bar (#20).
+    let viewport = if cfg!(target_os = "macos") {
+        viewport.with_fullsize_content_view(true).with_titlebar_shown(false).with_title_shown(false)
+    } else {
+        viewport.with_decorations(false)
+    };
     // On macOS a window icon replaces the Dock icon, and the bundle's own icon is the one padded to
     // Apple's icon grid (the full tile looked bigger than other apps', #102). An empty icon keeps
     // the bundle's; no icon at all would bring eframe's own.
