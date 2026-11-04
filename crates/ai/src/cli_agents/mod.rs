@@ -1467,7 +1467,14 @@ mod tests {
         let o = BackendOptions { args: vec!["--skip-git-repo-check".into()], ..Default::default() };
         assert_eq!(skip(&build_args(adapter_for("codex").as_ref(), &o, "q", "P:", &mcp(), None, Access::Build)), 1);
         assert!(a.contains(&"mcp_servers.craft-anything.command=\"/opt/ca/craft-anything-cli\"".to_string()));
-        assert!(a.contains(&"mcp_servers.craft-anything.args=[\"mcp\", \"--project\", \"/p/x.cany\"]".to_string()));
+        // #538: Codex doesn't refresh its callable tools after enable_toolset, so list all permitted
+        // tools from startup. Clean room still filters what the server lists and allows.
+        assert!(a.contains(&"mcp_servers.craft-anything.args=[\"mcp\", \"--project\", \"/p/x.cany\", \"--all-tools\"]".to_string()));
+        let mut already_all = mcp();
+        already_all.args.push("--all-tools".into());
+        let deep = build_args(adapter_for("codex").as_ref(), &BackendOptions::default(), "q", "P:", &already_all, None, Access::Build);
+        let args = deep.iter().find(|a| a.starts_with("mcp_servers.craft-anything.args=")).unwrap();
+        assert_eq!(args.matches("--all-tools").count(), 1, "a Deep build already lists every tool");
         // #528: the message goes in on stdin; `-` tells `codex exec` to read it there.
         assert_eq!(a.last().unwrap(), "-");
         // #540: `codex exec` can't ask, so the tools that ask for themselves are approved in the
@@ -1494,7 +1501,7 @@ mod tests {
         assert!(a.contains(&"--skip-git-repo-check".to_string()));
         assert!(a.windows(2).any(|w| w[0] == "--sandbox" && w[1] == "workspace-write"));
         assert!(a.contains(&"mcp_servers.craft-anything.command=\"/opt/ca/craft-anything-cli\"".to_string()));
-        assert!(a.contains(&"mcp_servers.craft-anything.args=[\"mcp\", \"--project\", \"/p/x.cany\"]".to_string()));
+        assert!(a.contains(&"mcp_servers.craft-anything.args=[\"mcp\", \"--project\", \"/p/x.cany\", \"--all-tools\"]".to_string()));
     }
 
     #[test]

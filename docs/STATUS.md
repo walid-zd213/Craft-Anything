@@ -248,7 +248,9 @@ laptops are covered by unit tests on fake `/sys/class/drm` folders only.
   that would ask (an MCP server's tools, in subagents too) unless the person allowed it in Maki's
   own permissions. It hasn't been run as a `maki -p` builder here.
 - Claude Code is fully wired as a builder; Codex works through its own flags (our tools are pre-approved for
-  `codex exec`, see `docs/codex.md`) but is unverified on a real install and doesn't resume;
+  `codex exec` and every tool permitted by the current mode is listed from startup, see `docs/codex.md`)
+  but doesn't resume. Codex 0.166.0 received the full Clean room inventory through a loopback model;
+  no real-account build has been run;
   Copilot builds, model discovery and real-account session
   resume were confirmed by the person using the app. Other agent programs
   without an adapter get plain text in and out. API-key

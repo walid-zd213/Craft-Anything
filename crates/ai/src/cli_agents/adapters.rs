@@ -735,7 +735,13 @@ impl AgentAdapter for Codex {
             v.extend(["--sandbox".into(), "workspace-write".into()]);
         }
         v.extend(["-c".into(), format!("mcp_servers.{MCP_NAME}.command={}", toml_string(&cx.mcp.command))]);
-        let args_toml = format!("[{}]", cx.mcp.args.iter().map(|s| toml_string(s)).collect::<Vec<_>>().join(", "));
+        // Codex doesn't refresh its callable tools after enable_toolset (#538), so list every
+        // permitted tool from startup. The server still applies Clean room's restrictions.
+        let mut mcp_args = cx.mcp.args.clone();
+        if !mcp_args.iter().any(|a| a == "--all-tools") {
+            mcp_args.push("--all-tools".into());
+        }
+        let args_toml = format!("[{}]", mcp_args.iter().map(|s| toml_string(s)).collect::<Vec<_>>().join(", "));
         v.extend(["-c".into(), format!("mcp_servers.{MCP_NAME}.args={args_toml}")]);
         // `codex exec` can't ask, so without this it refuses a tool not marked read-only, such as
         // rebuild_start, before our server sees the call (#540). Only tools that ask the person

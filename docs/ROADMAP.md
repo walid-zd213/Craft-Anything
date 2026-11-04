@@ -505,9 +505,10 @@ Owner: open · Status: in progress
 - [x] Aider has no adapter, so the plain one hands it the prompt as a file name, and it can open a
       browser sign-in nobody agreed to (#72). Give it an adapter, or stop offering it — claimed: Afloat16, branch bugfix/r2.2-aider-recommendations-20261103
 - [ ] Add a non-interactive Aider adapter before recommending it again; detection currently leaves it out.
-- [ ] Codex (#499): in a chat the tool server has no active target, tools turned on with
-      `enable_toolset` can't be called, The
-      reporter attached a patch for chat continuity; look at that first
+- [ ] Codex (#499): in a chat the tool server has no active target. The reporter attached a patch
+      for chat continuity; look at that first
+- [x] Codex (#538): list every permitted tool from startup, since Codex doesn't refresh its callable
+      list after `enable_toolset` changes it — PR #805
 - [x] Codex (#540): `rebuild_start` was refused by `codex exec`'s approval policy and showed as
       `null`; setup and the builder now approve our tools for Codex (we still ask before running
       code) and a refusal explains the fix (`docs/codex.md`)
